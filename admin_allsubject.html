@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technological University of the Phillipines</title>
+
+    <!--CSS here-->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 5px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="admin_navbar">
+                <img src="images/tupc_logo.png" alt="tupc-logo" width="100px" height="100px">
+                <a class="tup">TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES</a>
+            </div>
+            <ul>
+                <li><a class="active" href="admin_allsubject.html">ALL SUBJECTS</a></li>
+                <li><a href="admin_offered.html">OFFERED</a></li>
+                <li><a href="admin_reqapproval.html">REQUESTS APPROVAL</a></li>
+                <li><a href="login.html">LOG OUT</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="welcomeandadmin">
+            <label>WELCOME,</label>
+            <label>DEPARTMENT HEAD!</label>
+        </div>
+
+        <div class="coet-ns">
+            <label>BACHELOR OF ENGINEERING TECHNOLOGY Major in COMPUTER ENGINEERING</label>
+            <input type="radio" id="stem" name="track" value="STEM">
+            <label for="track">STEM</label>
+            <input type="radio" id="non-stem" name="track" value="NON-STEM">
+            <label for="track">NON-STEM</label>
+        </div>
+
+        <form action="" class="adddelsub">
+            <input type="text" name="subjectcode" id="subjectcode" placeholder="SUBJECT CODE">
+            <input type="text" name="subjectcode" id="subjectname" placeholder="SUBJECT NAME">
+
+            <select name="yands" id="yands">
+                <option>FIRST YEAR - FIRST SEMESTER</option>
+                <option>FIRST YEAR - SECOND SEMESTER</option>
+                <option>SECOND YEAR - FIRST SEMESTER</option>
+                <option>SECOND YEAR - SECOND SEMESTER</option>
+                <option>THIRD YEAR - FIRST SEMESTER</option>
+                <option>THIRD YEAR - SECOND SEMESTER</option>
+                <option>FOURTH YEAR - FIRST SEMESTER</option>
+                <option>FOURTH YEAR - SECOND SEMESTER</option>
+                </select>
+
+            <input type="button" value="x REMOVE SUBJECT">
+            <input type="button" value="+ ADD SUBJECT">
+        </form>
+
+        <div class="subjecttable">
+            <a>FIRST YEAR - FIRST SEMESTER</a>
+            <table class=firstyear_firstsem>
+                <tr>
+                    <th>SUBJECT CODE</th>
+                    <th>SUBJECT NAME</th>
+                </tr>
+                <tr>
+                    <td>BET1-C</td>
+                    <td>Orientation to BET, Seminars and Field Trips</td>
+
+                </tr>
+                <tr>
+                    <td>CHEMGEN-C</td>
+                    <td>General Chemistry (Lec)</td>
+                </tr>
+                <tr>
+                    <td>CHEMGENL-C</td>
+                    <td>General Chemistry (Lab)</td>
+                </tr>
+                <tr>
+                    <td>CPET 1L-C</td>
+                    <td>Program Logic and Formulation (Lab)</td>
+                </tr>
+                <tr>
+                    <td>BET1-C</td>
+                    <td>Electrical Circuits (Lec)</td>
+                </tr>
+                <tr>
+                    <td>BET1L-C</td>
+                    <td>Electrical Circuits (Lab)</td>
+                </tr>
+                <tr>
+                    <td>GEC1-C</td>
+                    <td>Understanding the Self</td>
+                </tr>
+                <tr>
+                    <td>GEC4-C</td>
+                    <td>Mathematics in the Modern World 1</td>
+                </tr>
+                <tr>
+                    <td>MATHA05-C</td>
+                    <td>Pre-Calculus</td>
+                </tr>
+                <tr>
+                    <td>NSTP1-C</td>
+                    <td>National Service Training Program 1</td>
+                </tr>
+                <tr>
+                    <td>CPE1-C</td>
+                    <td>Physical Fitness</td>
+                </tr>
+            </table>
+            <a>FIRST YEAR - SECOND SEMESTER</a>
+            <table class=firstyear_secondsem>
+                <tr>
+                    <th>SUBJECT CODE</th>
+                    <th>SUBJECT NAME</th>
+                </tr>
+                <tr>
+                    <td>CAD-C</td>
+                    <td>Computer Aided Drafting</td>
+                </tr>
+                <tr>
+                    <td>CHET-C</td>
+                    <td>Chemistry for Engineering Technologists</td>
+                </tr>
+                <tr>
+                    <td>CHETL-C</td>
+                    <td>Chemistry for Engineering Technologists(Lab)</td>
+                </tr>
+                <tr>
+                    <td>CPET2L-C</td>
+                    <td>Object Oriented Programming 2(Lab)</td>
+                </tr>
+                <tr>
+                    <td>EST1-C</td>
+                    <td>Electronics 1(Lec)</td>
+                </tr>
+                <tr>
+                    <td>EST1L-C</td>
+                    <td>Electronics 1 Lab</td>
+                </tr>
+                <tr>
+                    <td>GEC2-C</td>
+                    <td>Readings in Philippine History</td>
+                </tr>
+                <tr>
+                    <td>GEC5-C</td>
+                    <td>Purposive Communication</td>
+                </tr>
+                <tr>
+                    <td>GEC7-C</td>
+                    <td>Science, Technology, and Society</td>
+                </tr>
+                <tr>
+                    <td>MATHA13-C</td>
+                    <td>Differential Calculus</td>
+                </tr>
+                <tr>
+                    <td>NSTP2</td>
+                    <td>National Service Training Program 2</td>
+                </tr>
+                <tr>
+                    <td>PE2</td>
+                    <td>Rhythmic Activities</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
