@@ -20,24 +20,26 @@
     <link rel="stylesheet" href="css/signup.css">
 </head>
 
-<body>
-    <div class="main">
-        <div class="img">
-            <img src="images/tuplogo.png" alt="tupc-logo" width="100px" height="100px">
-
-            <a class="create">SIGN UP YOUR ACCOUNT</a>
-            <a class="manage">To manage your subjects and schedule all in one place</a>
-        </div>
+<body class="text-center">
+    <main>
+        <img class="mb4" src="images/tuplogo.png" alt="tuplogo" width="100" height="100">
+        <h1 class="create">SIGN UP YOUR ACCOUNT</h1>
+        <h1 class="manage">To manage your subjects and schedule all in one place</h1>
         <form>
-            <div class="info">
-                <input type="text" name="firstname" id="firstname" placeholder="First Name">
-                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+            <div class="form-floating">
+                <input type="text" name="firstname" class="form-control" id="floatingInput" placeholder="First Name" required>
+                <label for="floatingInput">First Name</label>
+            </div>
+            <div class="form-floating">
+                <input type="text" name="lastname" class="form-control" id="floatingInput" placeholder="Last Name" required>
+                <label for="floatingInput">Last Name</label>
             </div>
 
-            <div class="submit">
-                <input type="text" name="tupid" id="tupid" placeholder="TUPC-XX-XXXX">
-
-                <select name="yands" id="yands">
+            <div class="form-floating">
+                <input type="text" name="tupid" class="form-control" id="floatingInput" placeholder="TUPC-XX-XXXX" required>
+                <label for="floatingInput">TUPC-XX-XXXX</label>
+            </div>
+            <select name="yands" id="yands">
                 <option>BET-COET-1A</option>
                 <option>BET-COET-1B</option>
                 <option>BET-COET-2A</option>
@@ -49,16 +51,23 @@
                 </select>
 
             </div>
-            <div class="signup">
-                <input type="email" name="email" id="email" placeholder="juan.delacruz@gsfe.tupcavite.edu.ph"><br>
-                <input type="password" name="password" id="password" placeholder="Password"><br>
-                <input type="button" value="SIGN UP">
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email</label>
             </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+            </div>
+
         </form>
+
         <div class="loginref">
             <a>Already have an account? <a href="login.html">LOG IN</a> here.</a>
         </div>
-    </div>
+    </main>
+
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
