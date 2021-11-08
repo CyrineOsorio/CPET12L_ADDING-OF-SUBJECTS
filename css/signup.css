@@ -171,3 +171,19 @@ select {
     background: #e0e0e0;
     padding-left: 10%;
 }
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width:1200px) {
+    .info {
+        display: grid;
+    }
+    .form-floating {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h2.loginlabel {
+        justify-self: center;
+    }
+}
