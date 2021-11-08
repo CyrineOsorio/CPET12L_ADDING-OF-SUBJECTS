@@ -6,10 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+
+    <!--FONTS-->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--CSS Custom -->
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 
 <body>
+    <div class="main">
+        <div class="img">
+            <img src="images/tupc_logo.png" alt="tupc-logo" width="100px" height="100px">
+
+            <a class="create">SIGN UP YOUR ACCOUNT</a>
+            <a class="manage">To manage your subjects and schedule all in one place</a>
+        </div>
+        <form>
+            <div class="info">
+                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+            </div>
+
+            <div class="submit">
+                <input type="text" name="tupid" id="tupid" placeholder="TUPC-XX-XXXX">
+
+                <select name="yands" id="yands">
+                <option>BET-COET-1A</option>
+                <option>BET-COET-1B</option>
+                <option>BET-COET-2A</option>
+                <option>BET-COET-2B</option>
+                <option>BET-COET-3A</option>
+                <option>BET-COET-3B</option>
+                <option>BET-COET-4A</option>
+                <option>BET-COET-4B</option>
+                </select>
+
+            </div>
+            <div class="signup">
+                <input type="email" name="email" id="email" placeholder="juan.delacruz@gsfe.tupcavite.edu.ph"><br>
+                <input type="password" name="password" id="password" placeholder="Password"><br>
+                <input type="button" value="SIGN UP">
+            </div>
+        </form>
+        <div class="loginref">
+            <a>Already have an account? <a href="login.html">LOG IN</a> here.</a>
+        </div>
+    </div>
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
