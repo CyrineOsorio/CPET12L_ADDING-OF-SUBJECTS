@@ -21,7 +21,7 @@ body {
 
 main {
     display: grid;
-    width: 500px;
+    width: 600px;
     margin: 50px 20px 50px 20px;
     justify-content: center;
 }
@@ -53,7 +53,7 @@ img.mb4 {
     font-weight: 200;
     font-size: 23px;
     color: #575757;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 form {
@@ -72,7 +72,7 @@ input[type="email"] {
     font-style: normal;
     font-weight: 300;
     font-size: 23px;
-    padding-left: 25%;
+    padding-left: 10%;
 }
 
 
@@ -82,10 +82,11 @@ input[type="password"] {
     font-style: normal;
     font-weight: 300;
     font-size: 23px;
-    padding-left: 25%;
+    padding-left: 10%;
 }
 
-input.form-control:focus {
+input.form-control:focus,
+select.form-control:focus {
     box-shadow: none;
     border-radius: 50px;
     box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #ffffff;
@@ -100,7 +101,8 @@ input.form-control:focus {
 }
 
 .form-floating {
-    margin-bottom: 30px;
+    width: 50%;
+    margin-bottom: 10px;
 }
 
 .form-control {
@@ -122,9 +124,10 @@ button.signup {
     font-size: 23px;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 90px;
+    margin-top: 40px;
 }
 
 .signup:hover {
@@ -166,5 +169,5 @@ select {
     box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #ffffff;
     border: none;
     background: #e0e0e0;
-    padding-left: 25%;
+    padding-left: 10%;
 }
