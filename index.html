@@ -29,16 +29,16 @@
             user-select: none;
         }
         
-        @media (min-width: 768px) {
+        @media only screen and (max-width: 1200px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
+            }
+            .loglabel {
+                color: aqua;
             }
         }
     </style>
 
-
-    <!-- Custom styles for this template -->
-    <link href="ex.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
@@ -51,20 +51,20 @@
 
             <div class="form-floating">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">EMAIL</label>
+                <label for="floatingInput">Email</label>
             </div>
             <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">PASSWORD</label>
+                <label for="floatingPassword">Password</label>
             </div>
 
             </label>
             </div>
-            <button class="login" type="submit">LOG IN</button>
+            <button class="login" type="submit">Log in</button>
             <h2 class="signuplabel">Don't have an account? <a class="signuplabel" href="signup.html">SIGN UP</a> here.</h2>
         </form>
     </main>
-    <a style="font-family: 'Roboto', sans-serif; font-weight:200;">hatdoooogs</a>
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

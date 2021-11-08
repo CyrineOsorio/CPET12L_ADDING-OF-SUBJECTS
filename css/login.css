@@ -1,6 +1,18 @@
+* {
+    font-family: 'Roboto' serif;
+}
+
 html,
 body {
     height: 100%;
+}
+
+form {
+    display: grid;
+}
+
+form img.mb-4 {
+    justify-self: center;
 }
 
 body {
@@ -26,67 +38,64 @@ body {
     z-index: 2;
 }
 
-.form-signin input[type="email"] {
-    border-spacing: 10px;
+.form-floating {
+    margin-bottom: 20px;
 }
 
-.form-signin input[type="password"] {}
+.form-signin input[type="email"] {
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.form-signin input[type="password"] {
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
 
 h1.loglabel {
     width: 700px;
     height: 75px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 50px;
-    line-height: 59px;
     color: #E2435E;
 }
 
 h1.manage {
     width: 700px;
     height: 50px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 30px;
-    line-height: 35px;
     color: #575757;
 }
 
 input.form-control {
-    text-align: left;
-    width: 726px;
-    height: 44px;
+    width: 99%;
+    height: 100%;
     border: 1px solid #000000;
-    box-sizing: border-box;
     border-radius: 30px;
+    background-color: #F8F9FB;
+    padding-left: 20px;
 }
 
 button.login {
-    width: 726px;
+    width: 99%;
     height: 59px;
     background: #E2435E;
     border-radius: 90px;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
-    list-style: none;
-    margin: 0;
-    outline: none;
     padding: 10px 16px;
-    position: relative;
     text-align: center;
-    text-decoration: none;
     transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    margin-bottom: 40px;
 }
 
 .login:hover,
@@ -95,16 +104,27 @@ button.login {
 }
 
 h2.signuplabel {
-    width: 700px;
-    height: 50px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 30px;
-    line-height: 35px;
     color: #000000;
+    justify-self: flex-start;
+}
+
+label {
+    margin-left: 20px;
+    font-size: 20px;
 }
 
 a.signuplabel {
     color: #E2435E;
+}
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 1200px) {
+    h1.loglabel {
+        font-size: 25px;
+    }
 }
