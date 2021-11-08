@@ -26,20 +26,23 @@
         <h1 class="create">SIGN UP YOUR ACCOUNT</h1>
         <h1 class="manage">To manage your subjects and schedule all in one place</h1>
         <form>
-            <div class="form-floating">
-                <input type="text" name="firstname" class="form-control" id="floatingInput" placeholder="First Name" required>
-                <label for="floatingInput">First Name</label>
-            </div>
-            <div class="form-floating">
-                <input type="text" name="lastname" class="form-control" id="floatingInput" placeholder="Last Name" required>
-                <label for="floatingInput">Last Name</label>
+            <div class="info">
+                <div class="form-floating">
+                    <input type="text" name="firstname" class="form-control" id="floatingInput" placeholder="First Name" required>
+                    <label for="floatingInput">First Name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="lastname" class="form-control" id="floatingInput" placeholder="Last Name" required>
+                    <label for="floatingInput">Last Name</label>
+                </div>
             </div>
 
-            <div class="form-floating">
-                <input type="text" name="tupid" class="form-control" id="floatingInput" placeholder="TUPC-XX-XXXX" required>
-                <label for="floatingInput">TUPC-XX-XXXX</label>
-            </div>
-            <select name="yands" id="yands">
+            <div class="info">
+                <div class="form-floating">
+                    <input type="text" name="tupid" class="form-control" id="floatingInput" placeholder="TUPC-XX-XXXX" required>
+                    <label for="floatingInput">TUPC-XX-XXXX</label>
+                </div>
+                <select name="yands" id="yands">
                 <option>BET-COET-1A</option>
                 <option>BET-COET-1B</option>
                 <option>BET-COET-2A</option>
@@ -51,6 +54,7 @@
                 </select>
 
             </div>
+            </div>
 
             <div class="form-floating">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
@@ -61,11 +65,11 @@
                 <label for="floatingPassword">Password</label>
             </div>
 
+            <button class="signup" type="submit">Sign Up</button>
+            <h2 class="loginlabel">Already have an account? <a class="loginlabel" href="index.html">LOG IN</a> here.</h2>
         </form>
 
-        <div class="loginref">
-            <a>Already have an account? <a href="login.html">LOG IN</a> here.</a>
-        </div>
+
     </main>
 
 
