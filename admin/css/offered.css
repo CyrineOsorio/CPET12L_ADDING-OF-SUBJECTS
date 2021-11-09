@@ -3,6 +3,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+/*NAVBAR*/
+
 .nav-link {
     margin-right: 20px;
     color: black;
@@ -56,14 +59,156 @@ a:focus {
     font-weight: bold;
 }
 
+
+/*SECTION*/
+
+section {
+    min-height: 80vh;
+    width: 100%;
+    padding: 20px 40px 20px 40px
+}
+
+.welcome {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.subject {
+    display: flex;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.subject p {
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
+}
+
+.subject .radiobutton {
+    display: flex;
+    justify-self: flex-end;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.subject .radiobutton .radio1 {
+    margin-right: 5px;
+}
+
+.radio1,
+.radio2 {
+    padding: 5px 40px 5px 40px;
+    border-radius: 10px;
+}
+
+.button1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button1 button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.button1 button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.main {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 10px;
+    height: 65vh;
+    margin-top: 20px;
+    overflow-y: scroll;
+    padding: 20px 20px 20px 50px;
+    scroll-behavior: smooth;
+}
+
+#edit {
+    justify-self: flex-end;
+}
+
+.editbutton {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#edit {
+    background-color: black;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+}
+
+#edit:hover {
+    border: 1px solid black;
+    color: black;
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+    background-color: white;
+}
+
 @media only screen and (max-width:1000px) {
     #atech {
         display: none;
     }
     #tupcnav {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    section {
+        min-height: 80vh;
+        width: 100%;
+        padding: 20px 10px 20px 10px
+    }
+    .welcome {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 20px 20px 20px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .subject {
+        display: grid;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 120px;
+    }
+    .subject p {
+        width: 100%;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subject .radiobutton {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
     }
 }
 

@@ -55,6 +55,10 @@ a:focus {
     background-color: white;
 }
 
+#allsubjects {
+    font-weight: bold;
+}
+
 
 /*SECTION*/
 
@@ -77,6 +81,7 @@ section {
     display: flex;
     height: 30px;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .subject p {
@@ -104,16 +109,36 @@ section {
     border-radius: 10px;
 }
 
-.radio1:hover,
-.radio2:hover {
+.button1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button1 button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.button1 button:hover {
+    background-color: white;
     border: 1px solid black;
     color: black;
 }
 
-.radio1:focus-within,
-.radio2:focus-within {
-    background-color: black;
-    color: white;
+.main {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 10px;
+    height: 58vh;
+    margin-top: 20px;
+    overflow-y: scroll;
+    padding: 20px 20px 20px 50px;
+    scroll-behavior: smooth;
 }
 
 @media only screen and (max-width:1000px) {
@@ -143,14 +168,22 @@ section {
         display: grid;
         height: 30px;
         margin-top: 10px;
+        margin-bottom: 120px;
     }
     .subject p {
         width: 100%;
         text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .subject .radiobutton {
         width: 100%;
         justify-content: center;
+        align-items: center;
+        padding-top: 20px;
     }
 }
 

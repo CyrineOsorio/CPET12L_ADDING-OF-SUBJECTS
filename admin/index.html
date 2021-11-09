@@ -11,7 +11,7 @@
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/offered.css">
+    <link rel="stylesheet" href="css/admin.css">
 
     <!--FONTS-->
     <link rel="stylesheet" href="../css/fonts.css">
@@ -55,7 +55,7 @@
     <section>
         <div class="welcome">WELCOME, DEPARTMENT HEAD!</div>
         <div class="subject">
-            <p>OFFERED SUBJECTS </p>
+            <p>SUBJECT OF BACHELOR OF ENGINEERING TECHNOLOGY Major in COMPUTER ENGINEERING TECHNOLOGY </p>
             <div class="radiobutton">
                 <div class="radio1">
                     <input type="radio" id="html" name="fav_language" value="stem">
@@ -65,7 +65,38 @@
                     <label for="css">NON-STEM</label><br></div>
             </div>
         </div>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">Subject Code</label>
+                    <input type="text" class="form-control" id="validationTooltip01" required>
 
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Subject Name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip04">Year and Section</label>
+                    <select class="custom-select" id="validationTooltip04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>BET-COET-1A</option>
+                  <option>BET-COET-1B</option>
+                  <option>BET-COET-2A</option>
+                  <option>BET-COET-2B</option>
+                  <option>BET-COET-3A</option>
+                  <option>BET-COET-3B</option>
+                  <option>BET-COET-4A</option>
+                  <option>BET-COET-4D</option>
+                </select>
+
+                </div>
+            </div>
+            <div class="button1">
+                <button class="btn btn-primary" type="submit">x remove subject</button>
+                <button class="btn btn-primary" type="submit">+ add subject</button>
+            </div>
+        </form>
 
         <div class="main">
 
@@ -142,9 +173,6 @@
 
             </p>
 
-        </div>
-        <div class="editbutton">
-            <a class="nav-link" href="#add-or-delete-subjects" id="edit" onclick="edit()">Edit <span class="sr-only">(current)</span></a>
         </div>
     </section>
 
