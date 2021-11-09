@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Subjects</title>
+    <title>TUPC All Subjects</title>
 
 
     <!--BOOTSTRAP-->
@@ -21,17 +21,21 @@
 
     <nav class="navbar navbar-expand-lg" id="tupcnav">
         <img src="images/tuplogo.png" width="50" height="50" alt="tuplogo">
-        <a class="navbar-brand" href="admin.html">TECHNOLOGICAL UNIVERSITY <br> OF THE PHILIPPINES</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="admin.html" id="atech">TECHNOLOGICAL UNIVERSITY <br> OF THE PHILIPPINES</a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar">
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        </nav>
 
-            <form class="form-inline my-2 my-lg-0">
+
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+
+            <form class="d-flex">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="allsubjetcs.html" id="allsubjects">All Subjects <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#allsubjects" id="allsubjects">All Subjects <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="offered.html" id="offered">Offered</a>
@@ -48,6 +52,7 @@
             </form>
         </div>
     </nav>
+
 
     <!--JAVASCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

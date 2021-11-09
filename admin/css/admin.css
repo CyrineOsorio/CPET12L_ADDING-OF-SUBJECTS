@@ -43,14 +43,52 @@ a:focus {
     border-radius: 10px;
 }
 
+#logoutbutton:hover {
+    border: 1px solid black;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+section {
+    min-height: 80vh;
+    width: 100%;
+    padding: 20px 40px 20px 40px
+}
+
+.welcome {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width:1000px) {
     #atech {
         display: none;
     }
     #tupcnav {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    section {
+        min-height: 80vh;
+        width: 100%;
+        padding: 20px 10px 20px 10px
+    }
+    .welcome {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 20px 20px 20px 20px;
+        border-radius: 10px;
+        font-weight: bold;
     }
 }
 
