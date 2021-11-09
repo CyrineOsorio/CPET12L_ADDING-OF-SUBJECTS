@@ -77,6 +77,7 @@ section {
     display: flex;
     height: 30px;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .subject p {
@@ -104,16 +105,25 @@ section {
     border-radius: 10px;
 }
 
-.radio1:hover,
-.radio2:hover {
-    border: 1px solid black;
-    color: black;
+.button1 {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.radio1:focus-within,
-.radio2:focus-within {
+.button1 button {
     background-color: black;
     color: white;
+    border: none;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.button1 button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
 }
 
 @media only screen and (max-width:1000px) {
@@ -143,14 +153,22 @@ section {
         display: grid;
         height: 30px;
         margin-top: 10px;
+        margin-bottom: 120px;
     }
     .subject p {
         width: 100%;
         text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .subject .radiobutton {
         width: 100%;
         justify-content: center;
+        align-items: center;
+        padding-top: 20px;
     }
 }
 
