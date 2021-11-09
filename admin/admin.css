@@ -1,0 +1,50 @@
+* {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbarSupportedContent {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.nav-link {
+    margin-right: 20px;
+    color: black;
+}
+
+a {
+    color: black
+}
+
+a:focus {
+    font-weight: bold;
+}
+
+#tupcnav {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#tupcnav img {
+    margin-right: 15px;
+}
+
+#tupcnav a:hover {
+    color: red;
+}
+
+#tupcnav .navbar-brand {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#logoutbutton {
+    background-color: black;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
