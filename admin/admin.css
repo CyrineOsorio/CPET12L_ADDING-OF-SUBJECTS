@@ -15,7 +15,7 @@
 }
 
 a {
-    color: black
+    color: black;
 }
 
 a:focus {
@@ -32,8 +32,8 @@ a:focus {
     margin-right: 15px;
 }
 
-#tupcnav a:hover {
-    color: red;
+#tupcnav img:hover {
+    margin-right: 15px;
 }
 
 #tupcnav .navbar-brand {
