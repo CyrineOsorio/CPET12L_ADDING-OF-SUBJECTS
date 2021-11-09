@@ -3,6 +3,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+/*NAVBAR*/
+
 .nav-link {
     margin-right: 20px;
     color: black;
@@ -52,6 +55,9 @@ a:focus {
     background-color: white;
 }
 
+
+/*SECTION*/
+
 section {
     min-height: 80vh;
     width: 100%;
@@ -65,6 +71,25 @@ section {
     color: white;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
+}
+
+.subject {
+    display: flex;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.subject p {
+    justify-self: flex-start;
+    width: 50%;
+}
+
+.subject .radiobutton {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    border: 1px solid green;
 }
 
 @media only screen and (max-width:1000px) {
