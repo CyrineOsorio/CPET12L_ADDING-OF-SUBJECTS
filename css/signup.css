@@ -159,6 +159,7 @@ a.loginlabel {
 
 .form-floating>.form-control {
     padding-left: 25%;
+    background-color: white;
 }
 
 select {
@@ -166,8 +167,7 @@ select {
     height: 100%;
     border-radius: 10px;
     background-color: white;
-    background: #e0e0e0;
-    padding-left: 10%;
+    padding-left: 30%;
 }
 
 
