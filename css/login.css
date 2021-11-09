@@ -23,6 +23,7 @@ form {
     display: grid;
     width: 500px;
     margin: 50px 20px 50px 20px;
+    border: solid 1px red;
 }
 
 
@@ -91,6 +92,7 @@ input.form-control:focus {
 
 .form-floating {
     margin-bottom: 30px;
+    border: solid 1px red;
 }
 
 .form-control {
