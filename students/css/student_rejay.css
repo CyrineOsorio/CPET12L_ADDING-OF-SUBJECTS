@@ -117,10 +117,11 @@ section {
         width: 100%;
         margin-left: 0px;
     }
-    @media only screen and (min-width:1000px) {
-        #navbarToggleExternalContent {
-            display: flex;
-            justify-content: flex-end;
-        }
+}
+
+@media only screen and (min-width:1000px) {
+    #navbarToggleExternalContent {
+        display: flex;
+        justify-content: flex-end;
     }
 }
