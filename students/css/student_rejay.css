@@ -38,7 +38,6 @@ a:focus {
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 10px;
-    justify-self: flex-end;
 }
 
 #logoutbutton:hover {
@@ -54,7 +53,6 @@ a:focus {
 /*SECTION*/
 
 section {
-    border: solid 1px green;
     min-height: 10vh;
     width: 100%;
     padding: 20px 40px 20px 40px;
@@ -96,6 +94,7 @@ section {
     margin: auto;
     width: 50%;
     padding: 10px;
+    text-align: center;
 }
 
 .subject {
@@ -109,7 +108,72 @@ section {
     font-weight: bold;
 }
 
-@media only screen and (max-width:1000px) {
+.breadcrumb {
+    color: #E2435E;
+}
+
+.tableborder {
+    padding: 20px 20px 20px 20px;
+    border: solid 1px #E2435E;
+    border-radius: 10px;
+}
+
+table {
+    /*border-collapse: collapse;*/
+    width: 100%;
+    overflow-x: scroll;
+}
+
+td,
+th {
+    text-align: left;
+}
+
+td {
+    border: solid 1px #E2435E;
+}
+
+tr:nth-child(even) {
+    /*background-color: #dddddd;*/
+}
+
+.imgforgrades {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px 20px 40px;
+}
+
+.imgforgrades p {
+    font-size: 15px;
+    color: #E2435E;
+    border-color: #E2435E;
+}
+
+.submitbutton {
+    display: grid;
+    justify-content: end;
+}
+
+#submitbtn {
+    background-color: #E2435E;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+}
+
+#submitbtn:hover {
+    border: 1px solid black;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
     #atech {
         display: none;
     }
@@ -123,11 +187,24 @@ section {
     }
     .studentinfo {
         width: 100%;
+        border-radius: 0px;
         margin-right: 0px;
     }
     .studentstatus {
         width: 100%;
         margin-left: 0px;
+        background-color: #E2435E;
+        border-radius: 0px;
+        color: white;
+    }
+    .subject,
+    .breadcrumb {
+        justify-content: center;
+        text-align: center;
+    }
+    .imgforgrades {
+        display: grid;
+        padding: 10px 20px 10px 20px;
     }
 }
 

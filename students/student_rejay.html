@@ -52,7 +52,7 @@
 
 
     <section>
-        <div class="studentinfostatus">
+        <div class="studentinfostatus" id="studentinfostatus">
             <div class="studentinfo">
                 <div class="info">
                     <label>Name:</label>
@@ -82,6 +82,150 @@
         <div class="subject">
             <p>REQUEST OF SUBJECT</p>
         </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">First Year</li>
+                <li class="breadcrumb-item"><a href="#">Second Year</a></li>
+                <li class="breadcrumb-item"><a href="#">Third Year</a></li>
+                <li class="breadcrumb-item"><a href="#">Fourth Year</a></li>
+            </ol>
+        </nav>
+
+        <form>
+            <div class="tableborder">
+                <table>
+                    <tr>
+                        <th>SUBJECTS - FIRST SEMESTER</th>
+                        <th>GRADES</th>
+                    </tr>
+                    <tr>
+                        <td>BET1-C Orientation to BET, Seminars and Field Trips</td>
+                        <td contenteditable='true'> </td>
+
+                    </tr>
+                    <tr>
+                        <td>CHEMGEN-C General Chemistry (Lec)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>CHEMGENL-C General Chemistry (Lab)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>CPET 1L-C Program Logic and Formulation (Lab)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>BET1-C Electrical Circuits (Lec)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>BET1L-C Electrical Circuits (Lab)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>GEC1-C Understanding the Self</td>
+                        <td contenteditable='true'> </td>
+
+                    </tr>
+                    <tr>
+                        <td>GEC4-C Mathematics in the Modern World 1</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>MATHA05-C Pre-Calculus</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>NSTP1-C National Service Training Program 1</td>
+                        <td contenteditable='true'> </td>
+
+                    </tr>
+                    <tr>
+                        <td>CPE1-C Physical Fitness</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="imgforgrades">
+                <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
+                <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
+            </div> <br>
+
+            <div class="tableborder">
+                <table>
+                    <tr>
+                        <th>SUBJECTS - SECOND SEMESTER</th>
+                        <th>GRADES</th>
+                    </tr>
+                    <tr>
+                        <td>CAD-C Computer Aided Drafting</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>CHET-C Chemistry for Engineering Technologists</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>CHETL-C Chemistry for Engineering Technologists(Lab)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>CPET2L-C Object Oriented Programming 2(Lab)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>EST1-C Electronics 1(Lec)</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>EST1L-C Electronics 1 Lab</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>GEC2-C Readings in Philippine History</td>
+                        <td contenteditable='true'> </td>
+
+                    </tr>
+                    <tr>
+                        <td>GEC5-C Purposive Communication</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>GEC7-C Science, Technology, and Society</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>MATHA13-C Differential Calculus</td>
+                        <td contenteditable='true'> </td>
+
+                    </tr>
+                    <tr>
+                        <td>NSTP2 National Service Training Program 2</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                    <tr>
+                        <td>PE2 Rhythmic Activities</td>
+                        <td contenteditable='true'> </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="imgforgrades">
+                <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
+                <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
+            </div><br>
+
+
+            <div class="submitbutton">
+                <input type="button" value="PREV" hidden>
+                <input type="button" value="NEXT" hidden>
+                <input type="submit" value="SUBMIT REQUEST" id="submitbtn">
+            </div>
+        </form>
+
+
     </section>
 
 
