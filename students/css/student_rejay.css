@@ -1,216 +1,242 @@
-* {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/*NAVBAR*/
-
-a {
-    color: black;
-}
-
-a:focus {
-    font-weight: bold;
-}
-
-#tupcnav {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-#tupcnav img {
-    margin-right: 15px;
-}
-
-#tupcnav img:hover {
-    margin-right: 15px;
-}
-
-#tupcnav .navbar-brand {
-    font-weight: bold;
-    font-size: 15px;
-}
-
-#logoutbutton {
-    color: #E2435E;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-}
-
-#logoutbutton:hover {
-    border: 1px solid black;
-    color: black;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-
-/*SECTION*/
-
-section {
-    min-height: 10vh;
-    width: 100%;
-    padding: 20px 40px 20px 40px;
-}
-
-.studentinfostatus {
-    display: flex;
-}
-
-.studentinfo {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5px;
-    background-color: #E2435E;
-    padding: 20px 20px 20px 20px;
-    color: white;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.studentstatus {
-    margin-left: 5px;
-    padding: 20px 20px 20px 20px;
-    color: #E2435E;
-    border-radius: 10px;
-    border: solid 1px #E2435E;
-    width: 50%;
-}
-
-.info {
-    display: grid;
-}
-
-.data {
-    display: grid;
-}
-
-.statusCenter {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-}
-
-.subject {
-    display: flex;
-    height: 30px;
-}
-
-.subject p {
-    width: 50%;
-    height: 100%;
-    font-weight: bold;
-}
-
-.breadcrumb {
-    color: #E2435E;
-}
-
-.tableborder {
-    padding: 20px 20px 20px 20px;
-    border: solid 1px #E2435E;
-    border-radius: 10px;
-}
-
-table {
-    /*border-collapse: collapse;*/
-    width: 100%;
-    overflow-x: scroll;
-}
-
-td,
-th {
-    text-align: left;
-}
-
-td {
-    border: solid 1px #E2435E;
-}
-
-tr:nth-child(even) {
-    /*background-color: #dddddd;*/
-}
-
-.imgforgrades {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 40px 20px 40px;
-}
-
-.imgforgrades p {
-    font-size: 15px;
-    color: #E2435E;
-    border-color: #E2435E;
-}
-
-.submitbutton {
-    display: grid;
-    justify-content: end;
-}
-
-#submitbtn {
-    background-color: #E2435E;
-    color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    height: 40px;
-    border: none;
-}
-
-#submitbtn:hover {
-    border: 1px solid black;
-    color: black;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-@media only screen and (max-width: 1000px) {
-    #atech {
-        display: none;
+    * {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
     }
+    /*NAVBAR*/
+    
+    a {
+        color: black;
+    }
+    
+    a:focus {
+        font-weight: bold;
+    }
+    
     #tupcnav {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
+    
+    #tupcnav img {
+        margin-right: 15px;
+    }
+    
+    #tupcnav img:hover {
+        margin-right: 15px;
+    }
+    
+    #tupcnav .navbar-brand {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    #logoutbutton {
+        color: #E2435E;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+    }
+    
+    #logoutbutton:hover {
+        border: 1px solid black;
+        color: black;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    /*SECTION*/
+    
+    section {
+        min-height: 10vh;
+        width: 100%;
+        padding: 20px 40px 20px 40px;
+    }
+    
     .studentinfostatus {
+        display: flex;
+    }
+    
+    .studentinfo {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+        background-color: #E2435E;
+        padding: 20px 20px 20px 20px;
+        color: white;
+        border-radius: 10px;
+        width: 50%;
+    }
+    
+    .studentstatus {
+        margin-left: 5px;
+        padding: 20px 20px 20px 20px;
+        color: #E2435E;
+        border-radius: 10px;
+        border: solid 1px #E2435E;
+        width: 50%;
+    }
+    
+    .info {
         display: grid;
     }
-    .studentinfo {
-        width: 100%;
-        border-radius: 0px;
-        margin-right: 0px;
+    
+    .data {
+        display: grid;
     }
-    .studentstatus {
-        width: 100%;
-        margin-left: 0px;
-        background-color: #E2435E;
-        border-radius: 0px;
-        color: white;
-    }
-    .subject,
-    .breadcrumb {
-        justify-content: center;
+    
+    .statusCenter {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
         text-align: center;
     }
-    .imgforgrades {
-        display: grid;
-        padding: 10px 20px 10px 20px;
-    }
-}
-
-@media only screen and (min-width:1000px) {
-    #navbarToggleExternalContent {
+    
+    .subject {
         display: flex;
-        justify-content: flex-end;
+        height: 30px;
     }
-}
+    
+    .subject p {
+        width: 50%;
+        height: 100%;
+        font-weight: bold;
+    }
+    
+    .nav-item {
+        display: flex;
+    }
+    
+    .nav-item button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 10px;
+        transition: 0.3s;
+        color: #E2435E;
+    }
+    
+    .nav-item button:hover {
+        color: #E2435E;
+        font-weight: bold;
+    }
+    
+    .nav-item button.active {
+        color: #E2435E;
+        font-weight: bolder;
+    }
+    
+    .tabcontent {
+        border: solid 1px green;
+        display: hidden;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+    /*table*/
+    
+    .tableborder {
+        padding: 20px 20px 20px 20px;
+        border: solid 1px #E2435E;
+        border-radius: 10px;
+    }
+    
+    table {
+        /*border-collapse: collapse;*/
+        width: 100%;
+        overflow-x: scroll;
+    }
+    
+    td,
+    th {
+        text-align: left;
+    }
+    
+    td {
+        border: solid 1px #E2435E;
+    }
+    
+    tr:nth-child(even) {
+        /*background-color: #dddddd;*/
+    }
+    
+    .imgforgrades {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 40px 20px 40px;
+    }
+    
+    .imgforgrades p {
+        font-size: 15px;
+        color: #E2435E;
+        border-color: #E2435E;
+    }
+    
+    .submitbutton {
+        display: grid;
+        justify-content: end;
+    }
+    
+    #submitbtn {
+        background-color: #E2435E;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+        height: 40px;
+        border: none;
+    }
+    
+    #submitbtn:hover {
+        border: 1px solid black;
+        color: black;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        #atech {
+            display: none;
+        }
+        #tupcnav {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .studentinfostatus {
+            display: grid;
+        }
+        .studentinfo {
+            width: 100%;
+            border-radius: 0px;
+            margin-right: 0px;
+        }
+        .studentstatus {
+            width: 100%;
+            margin-left: 0px;
+            background-color: #E2435E;
+            border-radius: 0px;
+            color: white;
+        }
+        .subject,
+        .breadcrumb {
+            justify-content: center;
+            text-align: center;
+        }
+        .imgforgrades {
+            display: grid;
+            padding: 10px 20px 10px 20px;
+        }
+    }
+    
+    @media only screen and (min-width:1000px) {
+        #navbarToggleExternalContent {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
