@@ -104,8 +104,9 @@
         font-weight: bold;
     }
     
-    .nav-item {
+    #myTab {
         display: flex;
+        color: #E2435E;
     }
     
     .nav-item button {
@@ -127,14 +128,6 @@
     .nav-item button.active {
         color: #E2435E;
         font-weight: bolder;
-    }
-    
-    .tabcontent {
-        border: solid 1px green;
-        display: hidden;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        border-top: none;
     }
     /*table*/
     
@@ -224,7 +217,7 @@
             color: white;
         }
         .subject,
-        .breadcrumb {
+        #myTab {
             justify-content: center;
             text-align: center;
         }
