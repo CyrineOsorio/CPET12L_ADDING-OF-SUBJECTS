@@ -1,4 +1,4 @@
-function openYear(evt, yearName) {
+/*function openYear(evt, yearName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -10,4 +10,4 @@ function openYear(evt, yearName) {
     }
     document.getElementById(yearName).style.display = "block";
     evt.currentTarget.className += " active";
-}
+} */

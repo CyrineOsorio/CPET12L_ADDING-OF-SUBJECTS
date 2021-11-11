@@ -87,13 +87,19 @@ input[type="password"] {
     background-color: white;
 }
 
-input.form-control:focus,
-select.form-control:focus {
+input.form-control:focus {
     box-shadow: none;
     border-radius: 10px;
     background-color: white;
     padding-left: 25%;
     font-size: 23px;
+}
+
+select.form-select:focus {
+    box-shadow: none;
+    border-radius: 10px;
+    padding-left: 25%;
+    font-size: 18px;
 }
 
 .form-signin .form-floating:focus-within {
@@ -157,17 +163,18 @@ a.loginlabel {
     font-size: 23px;
 }
 
+.form-floating>.form-select,
 .form-floating>.form-control {
     padding-left: 25%;
     background-color: white;
 }
 
-select {
+.form-select {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     background-color: white;
-    padding-left: 30%;
+    padding-left: 5%;
 }
 
 
