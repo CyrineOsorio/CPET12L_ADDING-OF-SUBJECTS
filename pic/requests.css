@@ -65,15 +65,21 @@ section {
     color: white;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
-}
 
-table, th, td {
-    border: 1px solid black;
 }
 
 table {
+    border-collapse: collapse;
     width: 100%;
 }
+
+th {
+    text-align: left;
+}
+
+td {text-align: left;
+}
+
 @media only screen and (max-width:1000px) {
     #atech {
         display: none;
