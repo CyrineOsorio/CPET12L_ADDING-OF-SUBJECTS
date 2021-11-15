@@ -67,6 +67,13 @@ section {
     border-radius: 10px;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
 @media only screen and (max-width:1000px) {
     #atech {
         display: none;
@@ -90,6 +97,8 @@ section {
         border-radius: 10px;
         font-weight: bold;
     }
+
+    
 }
 
 @media only screen and (min-width:1000px) {
