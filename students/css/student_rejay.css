@@ -220,6 +220,7 @@
         #myTab {
             justify-content: center;
             text-align: center;
+            margin-bottom: 2%;
         }
         .imgforgrades {
             display: grid;
