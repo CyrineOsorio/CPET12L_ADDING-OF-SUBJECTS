@@ -36,7 +36,7 @@ a:focus {
 }
 
 #logoutbutton {
-    background-color: skyblue;
+    background-color: #319AE4;
     color: white;
     padding-left: 40px;
     padding-right: 40px;
@@ -44,7 +44,7 @@ a:focus {
 }
 
 #logoutbutton:hover {
-    border: 1px solid skyblue;
+    border: 1px solid #319AE4;
     color: black;
     padding-left: 40px;
     padding-right: 40px;
@@ -61,7 +61,7 @@ section {
 .welcome {
     display: flex;
     justify-content: flex-start;
-    background-color: skyblue;
+    background-color: #319AE4;
     color: white;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
@@ -71,7 +71,7 @@ section {
 table {width:100%
 }
 
-th,td {border: rgb(131, 216, 250) 1px solid;
+th,td {border: #319AE4 1px solid;
 }
 th, td {
     padding: 15px;
@@ -80,7 +80,7 @@ th, td {
 table {border-spacing: 15px 15px;
 
 }
-tr:hover {background-color: rgb(131, 216, 250);
+tr:hover {background-color: #319AE4;
 }
 
 @media only screen and (max-width:1000px) {
@@ -100,7 +100,7 @@ tr:hover {background-color: rgb(131, 216, 250);
     .welcome {
         display: flex;
         justify-content: center;
-        background-color: skyblue;
+        background-color: #319AE4;
         color: white;
         padding: 20px 20px 20px 20px;
         border-radius: 10px;
