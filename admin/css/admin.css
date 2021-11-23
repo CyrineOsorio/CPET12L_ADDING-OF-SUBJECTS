@@ -23,6 +23,7 @@ a:focus {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     padding-left: 40px;
     padding-right: 40px;
+    position: sticky;
 }
 
 #tupcnav img {
@@ -149,11 +150,15 @@ section {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
         padding-left: 10px;
         padding-right: 10px;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
     }
     section {
         min-height: 80vh;
         width: 100%;
-        padding: 20px 10px 20px 10px
+        padding: 20px 10px 20px 10px;
     }
     .welcome {
         display: flex;
