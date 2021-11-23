@@ -68,16 +68,19 @@ section {
 
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+table {width:100%
 }
 
-th {
-    text-align: left;
+th,td {border: rgb(131, 216, 250) 1px solid;
 }
+th, td {
+    padding: 15px;
+  text-align: left;
+}
+table {border-spacing: 15px 15px;
 
-td {text-align: left;
+}
+tr:hover {background-color: rgb(131, 216, 250);
 }
 
 @media only screen and (max-width:1000px) {
