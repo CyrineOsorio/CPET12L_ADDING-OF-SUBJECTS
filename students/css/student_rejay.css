@@ -166,10 +166,6 @@ td {
     border: solid 1px #E2435E;
 }
 
-tr:nth-child(even) {
-    /*background-color: #dddddd;*/
-}
-
 .imgforgrades {
     display: flex;
     justify-content: space-around;
