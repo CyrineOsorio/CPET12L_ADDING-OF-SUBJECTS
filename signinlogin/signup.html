@@ -26,47 +26,43 @@
         <h1 class="create">SIGN UP YOUR ACCOUNT</h1>
         <h1 class="manage">To manage your subjects and schedule all in one place</h1>
         <form>
-            <div class="info">
-                <div class="form-floating">
-                    <input type="text" name="firstname" class="form-control" id="floatingInput" placeholder="First Name" required>
-                    <label for="floatingInput">First Name</label>
+            <div class="formGroup1">
+                <div class="form-group1">
+                    <input type="text" class="form-control" id="fullname" aria-describedby="emailHelp" placeholder="Fullname" required>
                 </div>
-                <div class="form-floating">
-                    <input type="text" name="lastname" class="form-control" id="floatingInput" placeholder="Last Name" required>
-                    <label for="floatingInput">Last Name</label>
+                <div class="form-group1a">
+                    <input type="text" class="form-control" id="surname" aria-describedby="emailHelp" placeholder="Surname" required>
                 </div>
             </div>
 
-            <div class="info">
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="TUPC-XX-XXXX" required>
-                    <label for="floatingInput">Student Numbers</label>
+            <div class="formGroup2">
+                <div class="form-group2">
+                    <input type="text" class="form-control" id="studentno." aria-describedby="emailHelp" placeholder="TUPC-XX-XXXX" required>
                 </div>
-
-                <div class="form-floating">
-                    <select class="form-select" aria-label="Default select example">
-                    <option selected disabled value="">Year and Section</option>
-                    <option value="0">BET-COET-S-1A</option>
-                    <option value="1">BET-COET-NS-1B</option>
-                    <option value="2">BET-COET-NS-2A</option>
-                    <option value="3">BET-COET-S-2B</option>
-                    <option value="4">BET-COET-S-3A</option>
-                    <option value="5">BET-COET-NS-3B</option>
-                    <option value="6">BET-COET-S-4A</option>
-                    <option value="7">BET-COET-NS-4B</option>
-                  </select>
+                <div class="form-group2a">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                        <option value="0">BET-COET-S-1A</option>
+                        <option value="1">BET-COET-NS-1B</option>
+                        <option value="2">BET-COET-NS-2A</option>
+                        <option value="3">BET-COET-S-2B</option>
+                        <option value="4">BET-COET-S-3A</option>
+                        <option value="5">BET-COET-NS-3B</option>
+                        <option value="6">BET-COET-S-4A</option>
+                        <option value="7">BET-COET-NS-4B</option>
+                        </select>
                 </div>
-
             </div>
 
-            <div class="form-floating" style="width: 100%;">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email</label>
+
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="juan.delacruz@gsfe.tupcavite.edu.ph" required>
+
             </div>
-            <div class="form-floating" style="width: 100%;">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
+            <div class="form-group" style="display: grid; row-gap: 10px;">
+                <input type="password" class="form-control" id="password1" placeholder="Password" required>
+                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm" required>
             </div>
+
 
             <button class="signup" type="submit">Sign Up</button>
             <h2 class="loginlabel">Already have an account? <a class="loginlabel" href="index.html">LOG IN</a> here.</h2>

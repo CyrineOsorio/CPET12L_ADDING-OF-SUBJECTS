@@ -59,65 +59,7 @@ img.mb4 {
 form {
     display: grid;
     width: 100%;
-}
-
-.info {
-    display: flex;
-}
-
-
-/*email address input box*/
-
-input[type="email"] {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 23px;
-    padding-left: 10%;
-    background-color: white;
-}
-
-
-/*password input box*/
-
-input[type="password"] {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 23px;
-    padding-left: 10%;
-    background-color: white;
-}
-
-input.form-control:focus {
-    box-shadow: none;
-    border-radius: 10px;
-    background-color: white;
-    padding-left: 25%;
-    font-size: 23px;
-}
-
-select.form-select:focus {
-    box-shadow: none;
-    border-radius: 10px;
-    padding-left: 25%;
-    font-size: 18px;
-}
-
-.form-signin .form-floating:focus-within {
-    z-index: 2;
-}
-
-.form-floating {
-    width: 50%;
-    margin-bottom: 10px;
-}
-
-.form-control {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: white;
-    background: #e0e0e0;
-    padding-left: 25%;
+    row-gap: 10px;
 }
 
 button.signup {
@@ -163,32 +105,72 @@ a.loginlabel {
     font-size: 23px;
 }
 
-.form-floating>.form-select,
-.form-floating>.form-control {
-    padding-left: 25%;
-    background-color: white;
-}
-
-.form-select {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: white;
-    padding-left: 5%;
-}
-
 
 /*MEDIA QUERY*/
 
 @media only screen and (max-width:1200px) {
-    .info {
-        display: grid;
-    }
-    .form-floating {
-        width: 100%;
-        margin-bottom: 10px;
-    }
     h2.loginlabel {
         justify-self: center;
     }
+}
+
+
+/*forms*/
+
+
+/*fullname, surname, student number, year and section lagayan nila*/
+
+.formGroup1,
+.formGroup2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+
+/*dropdown year and section kasama label*/
+
+.form-group2a {
+    display: grid;
+}
+
+
+/*mga box mismo ng fullname, surname, student number, year and section*/
+
+.form-group1,
+.form-group1a,
+.form-group2,
+.form-group2a {
+    width: 100%;
+}
+
+
+/*pinakaloob ng fullname, surname, student number, year and section*/
+
+.form-group1 input,
+.form-group1a input,
+.form-group2 input,
+.form-group2a select,
+.form-control {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    border: 1px solid #CED4DA;
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.form-group1 input:focus,
+.form-group1a input:focus,
+.form-group2 input:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+/*/*dropdown year and section lang*/
+
+.form-group2a select {
+    padding: 0 10px 0 10px;
 }
