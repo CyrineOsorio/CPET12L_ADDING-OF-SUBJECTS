@@ -65,22 +65,40 @@ section {
     color: white;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
-
 }
 
-table {width:100%
+.requesttxt {
+    display: grid;
 }
 
-th,td {border: #319AE4 1px solid;
+.requesttxt p {
+    padding-top: 2%;
+    height: 100%;
+    font-weight: bold;
 }
-th, td {
+
+
+/*table*/
+
+table {
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    border-spacing: 15px 15px;
+}
+
+th,
+td {
+    text-align: left;
     padding: 15px;
-  text-align: left;
 }
-table {border-spacing: 15px 15px;
 
+td {
+    border: #319AE4 1px solid;
 }
-tr:hover {background-color: #319AE4;
+
+tr:hover {
+    background-color: #319AE4;
+    color: white;
 }
 
 @media only screen and (max-width:1000px) {
@@ -106,8 +124,6 @@ tr:hover {background-color: #319AE4;
         border-radius: 10px;
         font-weight: bold;
     }
-
-    
 }
 
 @media only screen and (min-width:1000px) {

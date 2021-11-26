@@ -149,12 +149,12 @@ section {
     padding: 20px 20px 20px 20px;
     border: solid 1px #E2435E;
     border-radius: 10px;
+    /*overflow: scroll;*/
 }
 
 table {
     /*border-collapse: collapse;*/
     width: 100%;
-    overflow-x: scroll;
 }
 
 td,
