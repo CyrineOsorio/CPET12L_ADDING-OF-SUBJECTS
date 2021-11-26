@@ -75,6 +75,26 @@ section {
     padding-left: 2%;
 }
 
+.form-row {
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.remarkbttn {
+    align-self: center;
+    margin-top: 15px;
+    width: 400px;
+}
+
+.remarkbttn button {
+    background-color: #319AE4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 section {
     border: solid 1px green;
 }
