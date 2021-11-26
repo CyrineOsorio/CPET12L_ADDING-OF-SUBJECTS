@@ -112,6 +112,7 @@ section {
     justify-content: space-evenly;
 }
 
+.approveall:hover,
 .approveone {
     background-color: black;
     color: white;
@@ -120,6 +121,7 @@ section {
     border-radius: 10px;
 }
 
+.approveone:hover,
 .approveall {
     background-color: white;
     color: black;
