@@ -58,23 +58,13 @@ section {
     padding: 20px 40px 20px 40px
 }
 
-.welcome {
+.titlepage {
     display: flex;
     justify-content: flex-start;
     background-color: #319AE4;
     color: white;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
-    font-weight: bold;
-}
-
-.requesttxt {
-    display: grid;
-}
-
-.requesttxt p {
-    padding-top: 2%;
-    height: 100%;
     font-weight: bold;
 }
 
@@ -89,15 +79,14 @@ section {
 }
 
 table {
+    margin-top: 20px;
     width: 100%;
-    border-spacing: 15px 15px;
 }
 
 th,
 td {
     text-align: left;
     height: 50px;
-    overflow: hidden;
 }
 
 th {
@@ -107,11 +96,6 @@ th {
 
 td {
     border: #319AE4 1px solid;
-}
-
-tr:hover {
-    background-color: #319AE4;
-    color: white;
 }
 
 @media only screen and (max-width:1000px) {
@@ -128,7 +112,7 @@ tr:hover {
         width: 100%;
         padding: 20px 10px 20px 10px
     }
-    .welcome {
+    .titlepage {
         display: flex;
         justify-content: center;
         background-color: #319AE4;
