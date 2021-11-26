@@ -35,7 +35,7 @@ a:focus {
     font-size: 15px;
 }
 
-#logoutbutton {
+#cancelbutton {
     background-color: #319AE4;
     color: white;
     padding-left: 40px;
@@ -43,7 +43,7 @@ a:focus {
     border-radius: 10px;
 }
 
-#logoutbutton:hover {
+#cancelbutton:hover {
     border: 1px solid #319AE4;
     color: black;
     padding-left: 40px;
@@ -66,6 +66,7 @@ section {
     border-radius: 10px;
     width: 100%;
 }
+
 .subject {
     display: flex;
     height: 30px;
@@ -79,7 +80,8 @@ section {
 
 #myTab {
     display: flex;
-    color: #319AE4;;
+    color: #319AE4;
+    ;
 }
 
 .nav-item button {
@@ -90,23 +92,29 @@ section {
     cursor: pointer;
     padding: 10px 10px;
     transition: 0.3s;
-    color: #319AE4;;
+    color: #319AE4;
+    ;
 }
 
 .nav-item button:hover {
-    color: #319AE4;;
+    color: #319AE4;
+    ;
     font-weight: bold;
 }
 
 .nav-item button.active {
-    color: #319AE4;;
+    color: #319AE4;
+    ;
     font-weight: bolder;
 }
+
+
 /*table*/
 
 .tableborder {
     padding: 20px 20px 20px 20px;
-    border: solid 1px #319AE4;;
+    border: solid 1px #319AE4;
+    ;
     border-radius: 10px;
 }
 
@@ -122,117 +130,116 @@ th {
 }
 
 td {
-    border: solid 1px #319AE4;;
+    border: solid 1px #319AE4;
+    ;
 }
 
 tr:nth-child(even) {
     /*background-color: #dddddd;*/
 }
 
- .imgforgrades {
-        display: flex;
-        justify-content: space-around;
-        padding: 20px 40px 20px 40px;
+.imgforgrades {
+    border: solid 1px green;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px 20px 40px;
+}
+
+.imgforgrades p {
+    font-size: 15px;
+    color: #319AE4;
+    border-color: #319AE4;
+}
+
+.submitbutton {
+    display: grid;
+    justify-content: end;
+}
+
+#submitbtn {
+    background-color: #319AE4;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+}
+
+#submitbtn:hover {
+    border: 1px solid black;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.imgforgrades {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px 20px 40px;
+}
+
+.imgforgrades p {
+    font-size: 15px;
+    color: #319AE4;
+    border-color: #319AE4;
+}
+
+.submitbutton {
+    display: grid;
+    justify-content: end;
+}
+
+#submitbtn {
+    background-color: #319AE4;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+}
+
+#submitbtn:hover {
+    border: 1px solid black;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    #atech {
+        display: none;
     }
-    
-    .imgforgrades p {
-        font-size: 15px;
-        color: #319AE4;
-        border-color: #319AE4;
+    #tupcnav {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    
-    .submitbutton {
-        display: grid;
-        justify-content: end;
+    .offered {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        margin-right: 0px;
     }
-    
-    #submitbtn {
-        background-color: #319AE4;
-        color: white;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 10px;
-        height: 40px;
-        border: none;
-    }
-    
-    #submitbtn:hover {
-        border: 1px solid black;
-        color: black;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 10px;
-        background-color: white;
+    .subject,
+    #myTab {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5%;
     }
     .imgforgrades {
-        display: flex;
-        justify-content: space-around;
-        padding: 20px 40px 20px 40px;
-    }
-    
-    .imgforgrades p {
-        font-size: 15px;
-        color: #319AE4;
-        border-color: #319AE4;
-    }
-    
-    .submitbutton {
         display: grid;
-        justify-content: end;
+        padding: 10px 20px 10px 20px;
     }
-    
-    #submitbtn {
-        background-color: #319AE4;
-        color: white;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 10px;
-        height: 40px;
-        border: none;
-    }
-    
-    #submitbtn:hover {
-        border: 1px solid black;
-        color: black;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 10px;
-        background-color: white;
-    }
-    
-    @media only screen and (max-width: 1000px) {
-        #atech {
-            display: none;
-        }
-        #tupcnav {
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        
-        
-        .offered {
-            width: 100%;
-            border-radius: 10px 10px 0px 0px;
-            margin-right: 0px;
-        }
-        
-        .subject,
-        #myTab {
-            justify-content: center;
-            text-align: center;
-            margin-bottom: 5%;
-        }
-        .imgforgrades {
-            display: grid;
-            padding: 10px 20px 10px 20px;
-        }
-    }
-    
-    @media only screen and (min-width:1000px) {
-        #navbarToggleExternalContent {
-            display: flex;
-            justify-content: flex-end;
-        }
-    }
+}
 
+@media only screen and (min-width:1000px) {
+    #navbarToggleExternalContent {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
