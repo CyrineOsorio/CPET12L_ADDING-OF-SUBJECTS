@@ -21,20 +21,15 @@
     <!--FONTS-->
     <link rel="stylesheet" href="../signinlogin/css/fonts.css">
 
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
 </head>
 
-<body>
+<body onresize="openpage()">
     <nav class="navbar navbar-expand-lg" id="tupcnav">
         <img src="../signinlogin/images/tuplogo.png" width="50" height="50" alt="tuplogo">
         <a class="navbar-brand" href="student_rejay.html" id="atech">TECHNOLOGICAL UNIVERSITY <br> OF THE PHILIPPINES</a>
-
-        <nav class="navbar">
-            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-
 
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
 
@@ -48,16 +43,12 @@
 
             </form>
         </div>
+        <i class="bi bi-list" onclick="details_hide_show()"></i>
+
     </nav>
 
 
-    <section>
-
-        <!--<a class="btn btn-primary col-12" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="seemore">
-           See student details
-          </a>-->
-
-
+    <section id="section">
         <div class="studentinfostatus" id="studentinfostatus">
             <div class="studentinfo">
                 <div class="info">
@@ -70,6 +61,7 @@
                     <label>JUAN DELA CRUZ</label>
                     <label>BET-COET-4B</label>
                 </div>
+
             </div>
 
             <div class="studentstatus">
@@ -80,9 +72,12 @@
                     <label>PROCESSED</label>
                 </div>
             </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../signinlogin/index.html" id="logoutbutton1">Logout</a>
+                </li>
+            </ul>
         </div>
-
-
     </section>
 
     <section>
