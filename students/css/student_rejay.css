@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 * {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -41,20 +42,57 @@ a:focus {
     font-size: 15px;
 }
 
+#tupcnav i {
+    font-size: 40px;
+    color: #E2435E;
+    width: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    display: none;
+}
+
+#tupcnav i:hover {
+    color: white;
+    background-color: #E2435E;
+    cursor: pointer;
+}
+
 #logoutbutton {
+    color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: #E2435E;
+}
+
+#logoutbutton:hover {
+    border: 1px solid #E2435E;
     color: #E2435E;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 10px;
+    background-color: #ffffff;
 }
 
-#logoutbutton:hover {
-    border: 1px solid black;
-    color: black;
+#logoutbutton1 {
+    display: none;
+    color: #ffffff;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #E2435E;
+}
+
+#logoutbutton1:hover {
+    border: 1px solid #E2435E;
+    color: #E2435E;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
 }
 
 
@@ -202,6 +240,10 @@ td {
     background-color: white;
 }
 
+#section {
+    transition: width .35s ease-in-out;
+}
+
 
 /*CODE PAG LUMIIT SCREEN*/
 
@@ -238,6 +280,21 @@ td {
     .imgforgrades {
         display: grid;
         padding: 10px 20px 10px 20px;
+    }
+    #logoutbutton1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    #logoutbutton {
+        display: none;
+    }
+    .studentinfostatus ul {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #tupcnav i {
+        display: flex;
     }
 }
 
