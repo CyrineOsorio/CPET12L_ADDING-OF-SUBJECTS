@@ -95,10 +95,6 @@ section {
     padding-right: 40px;
 }
 
-section {
-    border: solid 1px green;
-}
-
 .grades {
     margin-top: 5%;
     display: flex;
