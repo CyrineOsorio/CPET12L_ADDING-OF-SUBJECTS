@@ -308,7 +308,7 @@ td {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 500px) {
     section {
         min-height: 80vh;
         width: 100%;
