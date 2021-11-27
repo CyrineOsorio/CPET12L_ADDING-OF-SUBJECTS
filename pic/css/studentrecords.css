@@ -123,6 +123,17 @@ td {
     }
 }
 
+
+/*phone view*/
+
+@media only screen and (max-width:640px) {
+    section {
+        min-height: 80vh;
+        width: 100%;
+        padding: 20px 5px 20px 5px
+    }
+}
+
 @media only screen and (min-width:1000px) {
     #navbarToggleExternalContent {
         display: flex;
