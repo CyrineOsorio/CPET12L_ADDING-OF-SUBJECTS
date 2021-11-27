@@ -256,6 +256,12 @@ td {
         padding-left: 10px;
         padding-right: 10px;
     }
+    #section,
+    section {
+        min-height: 80vh;
+        width: 100%;
+        padding: 20px 10px 20px 10px;
+    }
     .studentinfostatus {
         display: grid;
     }
@@ -299,19 +305,23 @@ td {
 }
 
 
+/*phone view*/
+
+@media only screen and (max-width: 640px) {
+    #section,
+    section {
+        min-height: 80vh;
+        width: 100%;
+        padding: 20px 5px 20px 5px;
+    }
+}
+
+
 /*CODE HABANG MALAKI PA YUNG SCREEN*/
 
 @media only screen and (min-width:1000px) {
     #navbarToggleExternalContent {
         display: flex;
         justify-content: flex-end;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    section {
-        min-height: 80vh;
-        width: 100%;
-        padding: 20px 5px 20px 5px;
     }
 }
