@@ -259,7 +259,7 @@ td {
     section {
         min-height: 80vh;
         width: 100%;
-        padding: 20px 5px 20px 5px;
+        padding: 10px 5px 10px 5px;
     }
     .studentinfostatus {
         display: grid;
@@ -300,22 +300,6 @@ td {
     }
     #tupcnav i {
         display: flex;
-    }
-}
-
-
-/*phone view*/
-
-@media only screen and (max-width: 640px) {
-    #section {
-        min-height: 80vh;
-        width: 100%;
-        padding: 5px 5px 5px 5px;
-    }
-    section {
-        min-height: 80vh;
-        width: 100%;
-        padding: 20px 5px 20px 5px;
     }
 }
 
