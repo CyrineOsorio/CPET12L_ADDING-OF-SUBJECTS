@@ -256,11 +256,6 @@ td {
         padding-left: 10px;
         padding-right: 10px;
     }
-    #section {
-        min-height: 80vh;
-        width: 100%;
-        padding: 5px 5px 5px 5px;
-    }
     section {
         min-height: 80vh;
         width: 100%;
