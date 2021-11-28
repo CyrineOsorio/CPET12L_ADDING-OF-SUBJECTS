@@ -181,6 +181,11 @@ section {
     font-weight: bolder;
 }
 
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #E2435E;
+}
+
 
 /*table*/
 
@@ -188,7 +193,7 @@ section {
     padding: 20px 20px 20px 20px;
     border: solid 1px #DEE2E6;
     border-radius: 0px 0px 10px 10px;
-    /*overflow: scroll;*/
+    overflow: scroll;
 }
 
 table {
@@ -199,10 +204,22 @@ table {
 td,
 th {
     text-align: left;
+    border-collapse: separate;
+    border-spacing: 10px;
 }
 
 td {
-    border: solid 1px #E2435E;
+    border: transparent;
+    border-bottom: 1px solid #E2435E;
+}
+
+
+/*subject tables*/
+
+#studentsubjects {
+    border: transparent;
+    border-bottom: 1px solid #DEE2E6;
+    border-radius: 0;
 }
 
 .imgforgrades {
@@ -300,6 +317,12 @@ td {
     }
     #tupcnav i {
         display: flex;
+    }
+    td {
+        width: 200px;
+    }
+    #studentsubjects {
+        width: 500px;
     }
 }
 
