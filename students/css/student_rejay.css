@@ -144,6 +144,13 @@ section {
     text-align: center;
 }
 
+.statusCenter a {
+    display: none;
+    text-decoration: none;
+    color: #E2435E;
+    font-weight: 300px;
+}
+
 .subject {
     display: flex;
     height: 30px;
@@ -292,6 +299,12 @@ td {
         background-color: #E2435E;
         border-radius: 0px 0px 10px 10px;
         color: white;
+    }
+    .statusCenter a {
+        display: none;
+        text-decoration: none;
+        color: white;
+        font-weight: 300px;
     }
     .subject,
     #myTab {
