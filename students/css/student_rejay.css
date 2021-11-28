@@ -43,7 +43,7 @@ a:focus {
 }
 
 #tupcnav i {
-    font-size: 40px;
+    font-size: 35px;
     color: #E2435E;
     width: 50px;
     height: auto;
@@ -58,6 +58,7 @@ a:focus {
     color: white;
     background-color: #E2435E;
     cursor: pointer;
+    padding: 5px;
 }
 
 #logoutbutton {
