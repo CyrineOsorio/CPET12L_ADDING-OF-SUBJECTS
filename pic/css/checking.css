@@ -40,6 +40,10 @@ a:focus {
     font-size: 15px;
 }
 
+#cancelbutton1 {
+    display: none;
+}
+
 #cancelbutton {
     background-color: #319AE4;
     color: white;
@@ -260,12 +264,33 @@ a {
         padding: 20px 10px 20px 10px;
     }
     .offered {
-        width: 100%;
         border-radius: 0 0 0 0;
         margin-right: 0px;
+    }
+    #offered {
+        padding: 0 0 0 0;
+        border-radius: 0 0 0 0;
+        margin-right: 0px;
+        width: 100%;
         top: 70px;
         position: sticky;
         z-index: 10;
+    }
+    #cancelbutton {
+        display: none;
+    }
+    #cancelbutton1 {
+        display: flex;
+    }
+    .canceldiv {
+        width: 100%;
+    }
+    #offered a {
+        padding-top: 10px;
+        background-color: #319AE4;
+        color: white;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
     }
     .offered p {
         justify-self: center;
