@@ -21,9 +21,13 @@ a:focus {
 }
 
 #tupcnav {
+    top: 0;
+    position: sticky;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     padding-left: 40px;
     padding-right: 40px;
+    background-color: white;
+    z-index: 100;
 }
 
 #tupcnav img {
@@ -78,6 +82,7 @@ section {
 .tableborder {
     border: solid 1px #319AE4;
     border-radius: 10px;
+    margin-top: 20px;
     padding: 20px 20px 20px 20px;
     overflow-x: scroll;
 }
