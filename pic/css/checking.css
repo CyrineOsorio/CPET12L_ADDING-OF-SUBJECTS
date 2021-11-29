@@ -140,9 +140,9 @@ section {
 
 .tableborder {
     padding: 20px 20px 20px 20px;
-    border: solid 1px #319AE4;
-    ;
-    border-radius: 10px;
+    border: solid 1px #DEE2E6;
+    border-radius: 0px 0px 10px 10px;
+    overflow: scroll;
 }
 
 table {
@@ -156,8 +156,8 @@ th {
 }
 
 td {
+    border: transparent;
     border: solid 1px #319AE4;
-    ;
 }
 
 tr:nth-child(even) {
@@ -264,12 +264,6 @@ a {
         justify-content: center;
         text-align: center;
         margin-bottom: 5%;
-    }
-    .tableborder {
-        padding: 10px 10px 10px 10px;
-        border: solid 1px #319AE4;
-        ;
-        border-radius: 10px;
     }
     .imgforgrades {
         display: grid;
