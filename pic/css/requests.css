@@ -141,6 +141,21 @@ tr:hover {
         border-radius: 10px;
         font-weight: bold;
     }
+    .requesttxt {
+        display: grid;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 120px;
+    }
+    .requesttxt p {
+        width: 100%;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 @media only screen and (min-width:1000px) {
