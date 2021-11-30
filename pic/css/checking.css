@@ -302,6 +302,20 @@ a {
     }
     .bi-journal {
         display: flex;
+        font-size: 35px;
+        color: #319AE4;
+        width: 50px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-radius: 5px;
+    }
+    .bi-journal:hover {
+        color: white;
+        background-color: #319AE4;
+        cursor: pointer;
+        padding: 5px;
     }
     .grades,
     #myTab {
