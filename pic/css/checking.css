@@ -62,7 +62,6 @@ a:focus {
 }
 
 section {
-    min-height: 10vh;
     width: 100%;
     padding: 20px 40px 20px 40px;
 }
@@ -258,19 +257,21 @@ a {
     #cancelbutton {
         display: none;
     }
+    #navbarToggleExternalContent #studentname {
+        display: flex;
+        background-color: #319AE4;
+    }
     section {
-        min-height: 80vh;
         width: 100%;
         padding: 20px 10px 20px 10px;
     }
     .offered {
+        padding: 0 0 0 0;
         border-radius: 0 0 0 0;
         margin-right: 0px;
     }
     #offered {
-        padding: 0 0 0 0;
-        border-radius: 0 0 0 0;
-        margin-right: 0px;
+        background-color: #319AE4;
         width: 100%;
         top: 70px;
         position: sticky;
@@ -281,19 +282,26 @@ a {
     }
     #cancelbutton1 {
         display: flex;
-    }
-    .canceldiv {
-        width: 100%;
+        border: solid 1px white;
+        justify-content: center;
+        border-radius: 10px;
     }
     #offered a {
-        padding-top: 10px;
         background-color: #319AE4;
         color: white;
         text-decoration: none;
         padding: 10px 10px 10px 10px;
     }
+    #offered a:hover {
+        background-color: white;
+        color: #319AE4;
+        border: solid 1px #2272ac;
+    }
     .offered p {
         justify-self: center;
+    }
+    .bi-journal {
+        display: flex;
     }
     .grades,
     #myTab {
@@ -308,8 +316,7 @@ a {
 }
 
 @media only screen and (min-width:1000px) {
-    #navbarToggleExternalContent {
-        display: flex;
-        justify-content: flex-end;
+    .bi-journal {
+        display: none;
     }
 }
