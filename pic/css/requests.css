@@ -118,8 +118,13 @@ td {
 }
 
 tr:hover {
-    background-color: #319AE4;
+    background-color: hsl(205, 77%, 54%, 50%);
     color: white;
+}
+
+table a:hover {
+    color: white;
+    font-weight: bold;
 }
 
 @media only screen and (max-width:1000px) {
