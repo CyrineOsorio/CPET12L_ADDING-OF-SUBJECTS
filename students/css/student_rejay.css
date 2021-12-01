@@ -257,8 +257,8 @@ td {
 }
 
 #submitbtn:hover {
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #E2435E;
+    color: #E2435E;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 10px;
