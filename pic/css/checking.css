@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 * {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -17,6 +18,7 @@ a:focus {
 }
 
 #tupcnav {
+    display: flex;
     top: 0;
     position: sticky;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -39,6 +41,10 @@ a:focus {
     font-size: 15px;
 }
 
+#cancelbutton1 {
+    display: none;
+}
+
 #cancelbutton {
     background-color: #319AE4;
     color: white;
@@ -57,7 +63,6 @@ a:focus {
 }
 
 section {
-    min-height: 10vh;
     width: 100%;
     padding: 20px 40px 20px 40px;
 }
@@ -250,18 +255,68 @@ a {
         padding-left: 10px;
         padding-right: 10px;
     }
+    #cancelbutton {
+        display: none;
+    }
+    #navbarToggleExternalContent #studentname {
+        display: flex;
+        background-color: #319AE4;
+    }
     section {
-        min-height: 80vh;
         width: 100%;
         padding: 20px 10px 20px 10px;
     }
     .offered {
-        width: 100%;
-        border-radius: 10px 10px 10px 10px;
+        padding: 0 0 0 0;
+        border-radius: 0 0 0 0;
         margin-right: 0px;
+    }
+    #offered {
+        background-color: #319AE4;
+        width: 100%;
+        top: 70px;
+        position: sticky;
+        z-index: 10;
+    }
+    #cancelbutton {
+        display: none;
+    }
+    #cancelbutton1 {
+        display: flex;
+        border: solid 1px white;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    #offered a {
+        background-color: #319AE4;
+        color: white;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+    }
+    #offered a:hover {
+        background-color: white;
+        color: #319AE4;
+        border: solid 1px #2272ac;
     }
     .offered p {
         justify-self: center;
+    }
+    .bi-journal {
+        display: flex;
+        font-size: 35px;
+        color: #319AE4;
+        width: 50px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-radius: 5px;
+    }
+    .bi-journal:hover {
+        color: white;
+        background-color: #319AE4;
+        cursor: pointer;
+        padding: 5px;
     }
     .grades,
     #myTab {
@@ -276,8 +331,17 @@ a {
 }
 
 @media only screen and (min-width:1000px) {
-    #navbarToggleExternalContent {
+    .bi-journal {
+        display: none;
+    }
+    #cancelnav {
         display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #ulid {
+        display: flex;
+        width: 100%;
         justify-content: flex-end;
     }
 }
