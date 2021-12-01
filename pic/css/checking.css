@@ -18,6 +18,7 @@ a:focus {
 }
 
 #tupcnav {
+    display: flex;
     top: 0;
     position: sticky;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -332,5 +333,15 @@ a {
 @media only screen and (min-width:1000px) {
     .bi-journal {
         display: none;
+    }
+    #cancelnav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #ulid {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
     }
 }
