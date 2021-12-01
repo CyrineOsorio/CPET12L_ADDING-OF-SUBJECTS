@@ -86,6 +86,7 @@
 
 
 
+
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#firstyear" type="button" role="tab" aria-controls="home" aria-selected="true">First Year</button>
@@ -467,7 +468,26 @@
             </div>
 
             <div class="submitbutton">
-                <input type="submit" value="Submit" id="submitbtn">
+                <input type="button" value="Submit" id="submitbtn" data-toggle="modal" data-target="#staticBackdrop">
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" style="width: 500px;">
+                    <div class="modal-content">
+                        <div class="modal-header" style="border: transparent;">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                        </div>
+                        <div class="modal-body" style="display: grid; justify-items: center;width: 100%;  row-gap: 50px;">
+                            <img src="https://img.icons8.com/office/100/000000/checked--v1.png" />
+                            <h1 style="color: #319AE4;">REQUEST SUBMITTED</h1>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
 

@@ -97,13 +97,31 @@
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="approveone">Approve</button>
-                            <button type="button" class="approveall">Approve All</button>
+                            <button type="button" class="approveone" data-toggle="modal" data-target="#staticBackdrop">Approve</button>
+                            <button type="button" class="approveall" data-toggle="modal" data-target="#staticBackdrop">Approve All</button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
+        <!-- Modal -->
+        <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="width: 500px;">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: transparent;">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                    </div>
+                    <div class="modal-body" style="display: grid; justify-items: center;width: 100%;  row-gap: 50px;">
+                        <img src="https://img.icons8.com/office/100/000000/checked--v1.png" />
+                        <h1 style="color: #000000;">Thanks for approving!</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
 
