@@ -129,18 +129,15 @@ section {
     padding: 10px 10px;
     transition: 0.3s;
     color: #319AE4;
-    ;
 }
 
 .nav-item button:hover {
     color: #319AE4;
-    ;
     font-weight: bold;
 }
 
 .nav-item button.active {
     color: #319AE4;
-    ;
     font-weight: bolder;
 }
 
@@ -169,10 +166,6 @@ td {
     border: solid 1px #319AE4;
 }
 
-tr:nth-child(even) {
-    /*background-color: #dddddd;*/
-}
-
 .imgforgrades {
     display: flex;
     justify-content: space-around;
@@ -184,6 +177,10 @@ a {
     font-size: 15px;
     color: #319AE4;
     border-color: #319AE4;
+}
+
+a {
+    color: black;
 }
 
 .submitbutton {
