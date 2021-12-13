@@ -42,10 +42,10 @@
 
             <div class="formGroup2">
                 <div class="form-group2">
-                    <input type="text" class="form-control" id="studentno." aria-describedby="emailHelp" placeholder="TUPC-XX-XXXX" required>
+                    <input type="text" class="form-control" id="studentno1" aria-describedby="emailHelp" placeholder="TUPC-XX-XXXX" required>
                 </div>
                 <div class="form-group2a">
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                    <select class="custom-select mr-sm-2" id="section1" required>
                         <option value="0">BET-COET-S-1A</option>
                         <option value="1">BET-COET-NS-1B</option>
                         <option value="2">BET-COET-NS-2A</option>
@@ -60,16 +60,16 @@
 
 
             <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="juan.delacruz@gsfe.tupcavite.edu.ph" required>
+                <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="juan.delacruz@gsfe.tupcavite.edu.ph" required>
 
             </div>
             <div class="form-group" style="display: grid; row-gap: 10px;">
-                <input type="password" class="form-control" id="password1" placeholder="Password" required>
-                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm" required>
+                <input type="password" class="form-control" id="password1" placeholder="Password" maxlength="5" required>
+                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm" maxlength="5" required>
             </div>
 
 
-            <button class="signup" type="submit">Sign Up</button>
+            <button class="signup" type="button" id="signup">Sign Up</button>
             <h2 class="loginlabel">Already have an account? <a class="loginlabel" href="index.html">LOG IN</a> here.</h2>
         </form>
 
@@ -82,6 +82,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="js/signup.js"></script>
+
 </body>
 
 </html>

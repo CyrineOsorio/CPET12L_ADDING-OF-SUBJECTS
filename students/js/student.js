@@ -12,5 +12,7 @@ function details_hide_show() {
     } else {
         x.style.display = "none";
     }
-
 }
+
+
+
