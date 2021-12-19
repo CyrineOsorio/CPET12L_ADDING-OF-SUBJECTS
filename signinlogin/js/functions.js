@@ -1,13 +1,13 @@
 // CREATE ACCOUNT
 
 var accounts = [
-    ['Admin', 'TUPC', 'TUPC-ADMIN-1234', 'admin@gmail.com', 'admin12345'],
-    ['PIC', 'TUPC', 'TUPC-PIC-1234', 'pic@gmail.com', 'pic12345'],
-    ["REJAY", "MORADA", "TUPC-19-0764", "email1@gmail.com", "password1"],
-    ["CYRINE", "OSORIO", "TUPC-19-0001", "email2@gmail.com", "password2"],
-    ["ASPHER", "HINACAY", "TUPC-19-0002", "email3@gmail.com", "password3"],
-    ["JAIRUS", "SAMBAJON", "TUPC-19-0003", "email4@gmail.com", "password4"],
-    ["RAY", "VEGA", "TUPC-19-0004", "email5@gmail.com", "password5"]
+    //['Admin', 'TUPC', 'TUPC-ADMIN-1234', 'admin@gmail.com', 'admin12345'],
+    //['PIC', 'TUPC', 'TUPC-PIC-1234','pic@gmail.com', 'pic12345'],
+    ["REJAY", "MORADA", "TUPC-19-0764", 'BET-COET-S-3B', "email1@gmail.com", "password1"],
+    ["CYRINE", "OSORIO", "TUPC-19-0001", 'BET-COET-S-3B', "email2@gmail.com", "password2"],
+    ["ASPHER", "HINACAY", "TUPC-19-0002", 'BET-COET-S-3B', "email3@gmail.com", "password3"],
+    ["JAIRUS", "SAMBAJON", "TUPC-19-0003", 'BET-COET-S-3B', "email4@gmail.com", "password4"],
+    ["RAY", "VEGA", "TUPC-19-0004", 'BET-COET-S-3B', "email5@gmail.com", "password5"]
 ];
 
 
@@ -18,7 +18,8 @@ function signUp() {
     var fname = document.forms["signup_form"]['firstname'].value;
     var sname = document.forms["signup_form"]['surname'].value;
     var studentnum = document.forms["signup_form"]['studentno1'].value;
-    //var section = document.forms["signup_form"]['section1'].value;
+    var section = document.getElementById("section0").value;
+    //var section = document.forms["signup_form"]['section0'].value;
     var email = document.forms["signup_form"]["email1"].value;
     var pass1 = document.forms["signup_form"]['password1'].value;
     var pass2 = document.forms["signup_form"]['confirmpassword'].value;
@@ -41,8 +42,24 @@ function signUp() {
         outputText = "Password didn't match"
     } else if (outputText == "") {
         outputText = "Created Account Successfully"
-        accounts.push([fname, sname, studentnum, email, pass1])
-        window.location.href = '../students/index.html';
+        accounts.push([fname, sname, studentnum, section, email, pass1])
+
+        for (var i = 0, len = accounts.length; i < len; i++) {
+            if ((accounts[i][4] === email) && (accounts[i][5] === pass1)) {
+
+                studnum = accounts[i][2];
+                fullname = accounts[i][0] + ' ' + accounts[i][1];
+                section = accounts[i][3];
+
+                // student details to transfer data in student page
+                localStorage.setItem("value1", studnum);
+                localStorage.setItem("value2", fullname);
+                localStorage.setItem("value3", section);
+                window.location.href = '../students/index.html';
+                break; // need this break to prevent multiple results of the same array
+            }
+        }
+
     }
 
     // output the result
@@ -71,19 +88,17 @@ function logIn() {
         window.location.href = '../pic/index.html'
     } else {
         for (var i = 0, len = accounts.length; i < len; i++) {
-            if ((accounts[i][3] === email) && (accounts[i][4] === pass)) {
+            if ((accounts[i][4] === email) && (accounts[i][5] === pass)) {
 
                 studnum = accounts[i][2];
                 fullname = accounts[i][0] + ' ' + accounts[i][1];
-                //section = accounts[i][2];
-                outputText = studnum;
+                section = accounts[i][3];
+                outputText = "Sign in successfully";
                 // student details to transfer data in student page
                 localStorage.setItem("value1", studnum);
                 localStorage.setItem("value2", fullname);
+                localStorage.setItem("value3", section);
                 window.location.href = '../students/index.html';
-
-
-                // window.location.href = '../students/index.html'
                 break; // need this break to prevent multiple results of the same array
             }
         }
@@ -116,10 +131,11 @@ function details_hide_show() {
 
 //source = https://pretagteam.com/question/how-can-i-pass-data-from-one-html-page-to-another-using-javascript
 
-//displaying student details
+//displaying student details when student signing in or creating
 var a = localStorage.getItem("value1");
 var b = localStorage.getItem("value2");
+var c = localStorage.getItem("value3");
 
 document.getElementById("studentnumber1").innerHTML = a;
 document.getElementById("fullname1").innerHTML = b;
-//document.getElementById("demo").innerHTML = "Paragraph changed!";
+document.getElementById("section1").innerHTML = c;
