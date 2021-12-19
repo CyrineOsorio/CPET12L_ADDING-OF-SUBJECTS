@@ -58,7 +58,7 @@ form img.mb4 {
 
 /*button*/
 
-button.login {
+input.login {
     width: 100%;
     height: 59px;
     background: #E2435E;

@@ -9,8 +9,9 @@ var students = [
 ];
 
 
-// search the animals array
-function searchEmails() {
+// search the email in array
+//why email? because email is the primary key :(
+function signUp() {
 
     var fname = document.forms["signup_form"]['firstname'].value;
     var sname = document.forms["signup_form"]['surname'].value;
@@ -27,7 +28,7 @@ function searchEmails() {
         for (var j = 0; j < students[i].length; j++) {
             if (students[i][j].search(email) != -1) {
                 outputText += "[" + students[i] + "]<br>";
-                window.location.href = '../students/index.html';
+                outputText = "Account already exist"
                 break; // need this break to prevent multiple results of the same array
             }
         }
@@ -50,3 +51,32 @@ function searchEmails() {
 
 
 // // LOG IN ACCOUNTS
+
+function logIn() {
+
+    var email = document.forms["login_form"]['email'].value;
+    var pass = document.forms["login_form"]['password'].value;
+
+    outputText = "";
+
+    // search each cell for the query string
+    for (var i = 0; i < students.length; i++) {
+        for (var j = 0; j < students[i].length; j++) {
+            if ((email == students[i][j]) && (pass == students[i][j])) {
+                outputText += "[" + students[i] + "]<br>";
+                window.location.href = '../students/index.html';
+                break; // need this break to prevent multiple results of the same array
+            }
+        }
+    }
+
+    // conditions or handling errors
+    if (outputText == "") {
+        outputText = "Sign In Account Unsuccessfully"
+    }
+
+    // output the result
+    window.alert(outputText);
+
+
+}
