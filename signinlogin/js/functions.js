@@ -3,11 +3,11 @@
 var accounts = [
     ['Admin', 'TUPC', 'TUPC-ADMIN-1234', 'admin@gmail.com', 'admin12345'],
     ['PIC', 'TUPC', 'TUPC-PIC-1234', 'pic@gmail.com', 'pic12345'],
-    ["Rejay", "Morada", "TUPC-19-0764", "email1@gmail.com", "password1"],
-    ["Cyrine", "Osorio", "TUPC-19-0001", "email2@gmail.com", "password2"],
-    ["Aspher", "Hinacay", "TUPC-19-0002", "email3@gmail.com", "password3"],
-    ["Jairus", "Sambajon", "TUPC-19-0003", "email4@gmail.com", "password4"],
-    ["Ray", "Vega", "TUPC-19-0004", "email5@gmail.com", "password5"]
+    ["REJAY", "MORADA", "TUPC-19-0764", "email1@gmail.com", "password1"],
+    ["CYRINE", "OSORIO", "TUPC-19-0001", "email2@gmail.com", "password2"],
+    ["ASPHER", "HINACAY", "TUPC-19-0002", "email3@gmail.com", "password3"],
+    ["JAIRUS", "SAMBAJON", "TUPC-19-0003", "email4@gmail.com", "password4"],
+    ["RAY", "VEGA", "TUPC-19-0004", "email5@gmail.com", "password5"]
 ];
 
 
@@ -74,10 +74,16 @@ function logIn() {
             if ((accounts[i][3] === email) && (accounts[i][4] === pass)) {
 
                 studnum = accounts[i][2];
-                fullname = accounts[i][0] + accounts[i][1];
+                fullname = accounts[i][0] + ' ' + accounts[i][1];
                 //section = accounts[i][2];
                 outputText = studnum;
-                window.location.href = '../students/index.html'
+                // student details to transfer data in student page
+                localStorage.setItem("value1", studnum);
+                localStorage.setItem("value2", fullname);
+                window.location.href = '../students/index.html';
+
+
+                // window.location.href = '../students/index.html'
                 break; // need this break to prevent multiple results of the same array
             }
         }
@@ -107,3 +113,11 @@ function details_hide_show() {
         x.style.display = "none";
     }
 }
+
+//source = https://pretagteam.com/question/how-can-i-pass-data-from-one-html-page-to-another-using-javascript
+var a = localStorage.getItem("value1");
+var b = localStorage.getItem("value2");
+
+document.getElementById("studentnumber1").innerHTML = a;
+document.getElementById("fullname1").innerHTML = b;
+//document.getElementById("demo").innerHTML = "Paragraph changed!";
