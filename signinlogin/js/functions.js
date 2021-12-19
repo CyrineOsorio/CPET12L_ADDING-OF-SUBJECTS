@@ -1,8 +1,8 @@
 // CREATE ACCOUNT
 
 var accounts = [
-    ['admin@gmail.com', 'admin12345'],
-    ['pic@gmail.com', 'pic12345'],
+    ['Admin', 'TUPC', 'TUPC-ADMIN-1234', 'admin@gmail.com', 'admin12345'],
+    ['PIC', 'TUPC', 'TUPC-PIC-1234', 'pic@gmail.com', 'pic12345'],
     ["Rejay", "Morada", "TUPC-19-0764", "email1@gmail.com", "password1"],
     ["Cyrine", "Osorio", "TUPC-19-0001", "email2@gmail.com", "password2"],
     ["Aspher", "Hinacay", "TUPC-19-0002", "email3@gmail.com", "password3"],
@@ -64,5 +64,42 @@ function logIn() {
     outputText = "";
 
     // search each cell for the query string
+    // source = https://stackoverflow.com/questions/8809425/search-multi-dimensional-array-javascript
+    if (email == 'admin@gmail.com' && pass == 'admin12345') {
+        window.location.href = '../admin/index.html'
+    } else if (email == 'pic@gmail.com' && pass == 'pic12345') {
+        window.location.href = '../pic/index.html'
+    } else {
+        for (var i = 0, len = accounts.length; i < len; i++) {
+            if ((accounts[i][3] === email) && (accounts[i][4] === pass)) {
+                outputText = "Login Success";
+                window.location.href = '../students/index.html'
+                break; // need this break to prevent multiple results of the same array
+            }
+        }
+        // conditions or handling errors
+        if (outputText == "") {
+            outputText = "Account didn't exist";
+        }
+        // output the result
+        window.alert(outputText);
+    }
+}
 
+// STUDENT PAGE
+
+function openpage() {
+    var x = document.getElementById("section");
+    if (window.innerWidth > 1000) {
+        x.style.display = "grid";
+    }
+}
+
+function details_hide_show() {
+    var x = document.getElementById("section");
+    if (x.style.display === "none") {
+        x.style.display = "grid";
+    } else {
+        x.style.display = "none";
+    }
 }
