@@ -1,8 +1,8 @@
 // CREATE ACCOUNT
 
 var accounts = [
-    //['Admin', 'TUPC', 'TUPC-ADMIN-1234', 'admin@gmail.com', 'admin12345'],
-    //['PIC', 'TUPC', 'TUPC-PIC-1234','pic@gmail.com', 'pic12345'],
+    ['Admin', 'TUPC', 'TUPC-ADMIN-1234', 'admin@gmail.com', 'admin12345'],
+    ['PIC', 'TUPC', 'TUPC-PIC-1234', 'pic@gmail.com', 'pic12345'],
     ["REJAY", "MORADA", "TUPC-19-0764", 'BET-COET-S-3B', "email1@gmail.com", "password1"],
     ["CYRINE", "OSORIO", "TUPC-19-0001", 'BET-COET-S-3B', "email2@gmail.com", "password2"],
     ["ASPHER", "HINACAY", "TUPC-19-0002", 'BET-COET-S-3B', "email3@gmail.com", "password3"],
@@ -154,3 +154,6 @@ document.getElementById("section1").innerHTML = c;
 console.log(a);
 console.log(b);
 console.log(c);
+
+// ------------------------------------------------------------------------------------------------------------
+// ADMIN JAVASCRIPT!!!!!!!!!!!!!
