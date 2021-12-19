@@ -115,6 +115,8 @@ function details_hide_show() {
 }
 
 //source = https://pretagteam.com/question/how-can-i-pass-data-from-one-html-page-to-another-using-javascript
+
+//displaying student details
 var a = localStorage.getItem("value1");
 var b = localStorage.getItem("value2");
 
