@@ -1,38 +1,44 @@
 // CREATE ACCOUNT
 
-
 var students = [
     ["Rejay", "Morada", "TUPC-19-0764", "email1@gmail.com", "password1"],
     ["Cyrine", "Osorio", "TUPC-19-0001", "email2@gmail.com", "password2"],
     ["Aspher", "Hinacay", "TUPC-19-0002", "email3@gmail.com", "password3"],
     ["Jairus", "Sambajon", "TUPC-19-0003", "email4@gmail.com", "password4"],
-    //  ["Ray", "Vega", "TUPC-19-0004", "email5@gmail.com", "password5"]
+    ["Ray", "Vega", "TUPC-19-0004", "email5@gmail.com", "password5"]
 ];
 
 
-var signupbttn = document.getElementById('signup');
+// search the animals array
+function searchEmails() {
+    var email = document.forms["signup_form"]["email1"].value;
+    var fname = document.forms["signup_form"]['firstname'].value;
+    var sname = document.forms["signup_form"]['surname'].value;
+    var studentnum = document.forms["signup_form"]['studentno1'].value;
+    //var section = document.forms["signup_form"]['section1'].value;
+    var pass1 = document.forms["signup_form"]['password1'].value;
+    var pass2 = document.forms["signup_form"]['confirmpassword'].value;
 
-signupbttn.onclick = function() {
+    outputText = "";
 
-    var fname = document.getElementById('firstname').value;
-    var sname = document.getElementById('surname').value;
-    var studentnum = document.getElementById('studentno1').value;
-    //var section = document.getElementById('section1').value;
-    var email = document.getElementById('email1').value;
-    var pass1 = document.getElementById('password1').value;
-    var pass2 = document.getElementById('confirmpassword').value;
-
+    // search each cell for the query string
     for (var i = 0; i < students.length; i++) {
-
-        var a = students[i][3]
-        if (email == a) {
-            window.alert("Account is already exists");
-            window.alert(students);
-            break;
-        } else {
-            students.push([fname, sname, studentnum, email, pass1]);
-            window.alert(students);
+        for (var j = 0; j < students[i].length; j++) {
+            if (students[i][j].search(email) != -1) {
+                outputText += "[" + students[i] + "]<br>";
+                window.location.href = '../students/index.html';
+                break; // need this break to prevent multiple results of the same array
+            }
         }
-
     }
+
+    // conditions or handling errors
+    if (outputText == "") {
+        outputText = "Created Account Successfully"
+        students.push([fname, sname, studentnum, email, pass1])
+        window.location.href = '../students/index.html';
+    }
+
+    // output the result
+    window.alert(outputText);
 }

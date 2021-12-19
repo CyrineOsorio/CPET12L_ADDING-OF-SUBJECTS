@@ -62,7 +62,7 @@ form {
     row-gap: 10px;
 }
 
-button.signup {
+input.signup {
     width: 100%;
     height: 59px;
     background: #E2435E;
