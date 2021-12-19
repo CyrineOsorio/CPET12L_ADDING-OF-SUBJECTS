@@ -63,4 +63,6 @@ function logIn() {
 
     outputText = "";
 
+    // search each cell for the query string
+
 }
