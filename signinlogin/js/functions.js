@@ -72,7 +72,11 @@ function logIn() {
     } else {
         for (var i = 0, len = accounts.length; i < len; i++) {
             if ((accounts[i][3] === email) && (accounts[i][4] === pass)) {
-                outputText = "Login Success";
+
+                studnum = accounts[i][2];
+                fullname = accounts[i][0] + accounts[i][1];
+                //section = accounts[i][2];
+                outputText = studnum;
                 window.location.href = '../students/index.html'
                 break; // need this break to prevent multiple results of the same array
             }
