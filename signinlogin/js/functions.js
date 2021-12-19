@@ -11,11 +11,12 @@ var students = [
 
 // search the animals array
 function searchEmails() {
-    var email = document.forms["signup_form"]["email1"].value;
+
     var fname = document.forms["signup_form"]['firstname'].value;
     var sname = document.forms["signup_form"]['surname'].value;
     var studentnum = document.forms["signup_form"]['studentno1'].value;
     //var section = document.forms["signup_form"]['section1'].value;
+    var email = document.forms["signup_form"]["email1"].value;
     var pass1 = document.forms["signup_form"]['password1'].value;
     var pass2 = document.forms["signup_form"]['confirmpassword'].value;
 
@@ -42,3 +43,10 @@ function searchEmails() {
     // output the result
     window.alert(outputText);
 }
+
+
+
+
+
+
+// // LOG IN ACCOUNTS
