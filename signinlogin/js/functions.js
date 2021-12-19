@@ -10,6 +10,9 @@ var accounts = [
     ["RAY", "VEGA", "TUPC-19-0004", 'BET-COET-S-3B', "email5@gmail.com", "password5"]
 ];
 
+//print accounts in console
+console.log(accounts)
+
 
 // search the email in array
 //why email? because email is the primary key :(
@@ -18,8 +21,8 @@ function signUp() {
     var fname = document.forms["signup_form"]['firstname'].value;
     var sname = document.forms["signup_form"]['surname'].value;
     var studentnum = document.forms["signup_form"]['studentno1'].value;
-    var section = document.getElementById("section0").value;
-    //var section = document.forms["signup_form"]['section0'].value;
+    //var section = document.getElementById("section0").value;
+    var section = document.forms["signup_form"]['section0'].value;
     var email = document.forms["signup_form"]["email1"].value;
     var pass1 = document.forms["signup_form"]['password1'].value;
     var pass2 = document.forms["signup_form"]['confirmpassword'].value;
@@ -31,6 +34,8 @@ function signUp() {
         for (var j = 0; j < accounts[i].length; j++) {
             if (accounts[i][j].search(email) != -1) {
                 outputText += accounts[i];
+                //printing sa console
+                console.log(accounts);
                 outputText = "Account already exist"
                 break; // need this break to prevent multiple results of the same array
             }
@@ -64,6 +69,7 @@ function signUp() {
 
     // output the result
     window.alert(outputText);
+    console.log(accounts);
 }
 
 
@@ -94,6 +100,10 @@ function logIn() {
                 fullname = accounts[i][0] + ' ' + accounts[i][1];
                 section = accounts[i][3];
                 outputText = "Sign in successfully";
+                //print sa console
+                console.log(studnum);
+                console.log(fullname);
+                console.log(section);
                 // student details to transfer data in student page
                 localStorage.setItem("value1", studnum);
                 localStorage.setItem("value2", fullname);
@@ -139,3 +149,8 @@ var c = localStorage.getItem("value3");
 document.getElementById("studentnumber1").innerHTML = a;
 document.getElementById("fullname1").innerHTML = b;
 document.getElementById("section1").innerHTML = c;
+
+//print sa console ng student details
+console.log(a);
+console.log(b);
+console.log(c);
