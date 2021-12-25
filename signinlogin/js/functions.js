@@ -1,13 +1,11 @@
 // CREATE ACCOUNT
-
+//Given Name, Last Name, School ID, Course Year and Section, Email, Password, Status
 var accounts = [
-    ['Admin', 'TUPC', 'TUPC-ADMIN-1234', 'admin@gmail.com', 'admin12345'],
-    ['PIC', 'TUPC', 'TUPC-PIC-1234', 'pic@gmail.com', 'pic12345'],
-    ["REJAY", "MORADA", "TUPC-19-0764", 'BET-COET-S-3B', "email1@gmail.com", "password1"],
-    ["CYRINE", "OSORIO", "TUPC-19-0001", 'BET-COET-S-3B', "email2@gmail.com", "password2"],
-    ["ASPHER", "HINACAY", "TUPC-19-0002", 'BET-COET-S-3B', "email3@gmail.com", "password3"],
-    ["JAIRUS", "SAMBAJON", "TUPC-19-0003", 'BET-COET-S-3B', "email4@gmail.com", "password4"],
-    ["RAY", "VEGA", "TUPC-19-0004", 'BET-COET-S-3B', "email5@gmail.com", "password5"]
+    ["REJAY", "MORADA", "TUPC-19-0764", 'BET-COET-S-3B', "email1@gmail.com", "password1", "Processing"],
+    ["CYRINE", "OSORIO", "TUPC-19-0001", 'BET-COET-S-3B', "email2@gmail.com", "password2", "Processing"],
+    ["ASPHER", "HINACAY", "TUPC-19-0002", 'BET-COET-S-3B', "email3@gmail.com", "password3", "Processing"],
+    ["JAIRUS", "SAMBAJON", "TUPC-19-0003", 'BET-COET-S-3B', "email4@gmail.com", "password4", "Processing"],
+    ["RAY", "VEGA", "TUPC-19-0004", 'BET-COET-S-3B', "email5@gmail.com", "password5", "Processing"]
 ];
 
 //print accounts in console
@@ -21,7 +19,6 @@ function signUp() {
     var fname = document.forms["signup_form"]['firstname'].value;
     var sname = document.forms["signup_form"]['surname'].value;
     var studentnum = document.forms["signup_form"]['studentno1'].value;
-    //var section = document.getElementById("section0").value;
     var section = document.forms["signup_form"]['section0'].value;
     var email = document.forms["signup_form"]["email1"].value;
     var pass1 = document.forms["signup_form"]['password1'].value;
@@ -121,6 +118,7 @@ function logIn() {
     }
 }
 
+// ------------------------------------------------------------------------------------------------------------
 // STUDENT PAGE
 
 function openpage() {
@@ -157,3 +155,30 @@ console.log(c);
 
 // ------------------------------------------------------------------------------------------------------------
 // ADMIN JAVASCRIPT!!!!!!!!!!!!!
+
+//All Subjects
+var coetsubjects = [
+    //FIRST YEAR - FIRST AND SECOND SEMESTER
+    ['BET1-C', 'Orientation to BET, Seminars and Field Trips', 'FIRST YEAR - FIRST SEMESTER'],
+    ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER'],
+    ['CHEMGENL-C', 'General Chemistry (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
+    ['CPET 1L-C', 'Program Logic and Formulation (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
+    ['BET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER'],
+    ['BET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
+    ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER'],
+    ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER'],
+    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
+    //SECOND YEAR - FIRST AND SECOND SEMESTER
+    ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER'],
+    ['CPE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER'],
+    ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER'],
+    ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER'],
+    ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
+    ['CPET2L-C', 'Object Oriented Programming 2(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
+    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER']
+    //THIRD YEAR - FIRST AND SECOND SEMESTER
+
+
+    //FOURTH YEAR - FIRST AND SECOND SEMESTER
+
+]
