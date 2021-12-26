@@ -73,7 +73,7 @@ function signUp() {
 
 
 
-
+// ------------------------------------------------------------------------------------------------------------
 // // LOG IN ACCOUNTS
 
 function logIn() {
@@ -117,70 +117,3 @@ function logIn() {
         window.alert(outputText);
     }
 }
-
-// ------------------------------------------------------------------------------------------------------------
-// STUDENT PAGE
-
-function openpage() {
-    var x = document.getElementById("section");
-    if (window.innerWidth > 1000) {
-        x.style.display = "grid";
-    }
-}
-
-function details_hide_show() {
-    var x = document.getElementById("section");
-    if (x.style.display === "none") {
-        x.style.display = "grid";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-//source = https://pretagteam.com/question/how-can-i-pass-data-from-one-html-page-to-another-using-javascript
-
-//displaying student details when student signing in or creating
-var a = localStorage.getItem("value1");
-var b = localStorage.getItem("value2");
-var c = localStorage.getItem("value3");
-
-document.getElementById("studentnumber1").innerHTML = a;
-document.getElementById("fullname1").innerHTML = b;
-document.getElementById("section1").innerHTML = c;
-
-//print sa console ng student details
-console.log(a);
-console.log(b);
-console.log(c);
-
-// ------------------------------------------------------------------------------------------------------------
-// ADMIN JAVASCRIPT!!!!!!!!!!!!!
-
-//All Subjects
-var coetsubjects = [
-    //FIRST YEAR - FIRST AND SECOND SEMESTER
-    ['BET1-C', 'Orientation to BET, Seminars and Field Trips', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CHEMGENL-C', 'General Chemistry (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CPET 1L-C', 'Program Logic and Formulation (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['BET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER'],
-    ['BET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
-    ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER'],
-    ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER'],
-    //SECOND YEAR - FIRST AND SECOND SEMESTER
-    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
-    ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CPE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER'],
-    ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
-    ['CPET2L-C', 'Object Oriented Programming 2(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
-    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER']
-    //THIRD YEAR - FIRST AND SECOND SEMESTER
-
-
-    //FOURTH YEAR - FIRST AND SECOND SEMESTER
-
-]
-
-//reference: https://www.rgagnon.com/jsdetails/js-0018.html
