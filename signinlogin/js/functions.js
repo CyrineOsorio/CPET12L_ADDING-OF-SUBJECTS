@@ -13,7 +13,7 @@ console.log(accounts)
 
 
 // search the email in array
-//why email? because email is the primary key :(
+//why email? because email is the primary key :)
 function signUp() {
 
     var fname = document.forms["signup_form"]['firstname'].value;
@@ -167,8 +167,8 @@ var coetsubjects = [
     ['BET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
     ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER'],
     ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER'],
-    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
     //SECOND YEAR - FIRST AND SECOND SEMESTER
+    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
     ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER'],
     ['CPE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER'],
     ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER'],
@@ -182,3 +182,5 @@ var coetsubjects = [
     //FOURTH YEAR - FIRST AND SECOND SEMESTER
 
 ]
+
+//reference: https://www.rgagnon.com/jsdetails/js-0018.html
