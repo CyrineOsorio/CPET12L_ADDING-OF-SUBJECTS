@@ -116,7 +116,7 @@ section {
     gap: 20px;
 }
 
-.button1 button {
+.button1 input {
     background-color: black;
     color: white;
     border: none;
@@ -125,7 +125,7 @@ section {
     padding-right: 40px;
 }
 
-.button1 button:hover {
+.button1 input:hover {
     background-color: white;
     border: 1px solid black;
     color: black;
