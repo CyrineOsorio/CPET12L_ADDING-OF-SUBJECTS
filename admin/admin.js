@@ -67,22 +67,25 @@ function submitFunction(j) {
     //conditions for add subject
     if (j == 2) {
         window.alert(coetsubjects);
-        for (var i = 0, len = coetsubjects.length; i < len; i++) {
-            if (coetsubjects[i][0] === subcode) {
-                window.alert('Subject already exist');
-                break; // need this break to prevent multiple results of the same array
-            }
-        }
-        // conditions or handling errors
         if ((subcode == "") || (subname == "") || (yearandsem == "")) {
-            outputText = "Complete the form plesase"
-        } else if (outputText == "") {
-            coetsubjects.push([subcode, subname, yearandsem])
-            outputText = "Successfully Added";
-            window.alert(coetsubjects);
-        }
-        // output the result
-        window.alert(outputText);
+            window.alert("Complete the form plesase");
+        } else {
+            for (var i = 0, len = coetsubjects.length; i < len; i++) {
+                if (coetsubjects[i][0] != subcode) {
+                    coetsubjects.push([subcode, subname, yearandsem])
+                    outputText = "Successfully Added";
+                    window.alert(coetsubjects);
 
+                    break; // need this break to prevent multiple results of the same array
+                }
+            }
+
+            // conditions or handling errors
+            if (outputText == "") {
+                window.alert('Subject already exist');
+            }
+            // output the result
+            window.alert(outputText);
+        }
     }
 }
