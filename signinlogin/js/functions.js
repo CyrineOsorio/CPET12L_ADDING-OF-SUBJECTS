@@ -60,6 +60,7 @@ function signUp() {
                 localStorage.setItem("value3", section);
                 localStorage.setItem("value4", stats);
                 window.location.href = '../students/index.html';
+                console.log(accounts);
                 break; // need this break to prevent multiple results of the same array
             }
         }
@@ -107,6 +108,7 @@ function logIn() {
                 localStorage.setItem("value3", section);
                 localStorage.setItem("value4", stats);
                 window.location.href = '../students/index.html';
+                console.log(accounts);
                 break; // need this break to prevent multiple results of the same array
             }
         }

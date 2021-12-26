@@ -142,6 +142,26 @@ section {
     scroll-behavior: smooth;
 }
 
+
+/*table*/
+
+table {
+    /*border-collapse: collapse;*/
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+td {
+    border: transparent;
+    border-bottom: 1px solid black;
+}
+
 @media only screen and (max-width:1000px) {
     #atech {
         display: none;

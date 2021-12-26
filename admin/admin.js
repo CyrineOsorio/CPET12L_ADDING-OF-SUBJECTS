@@ -31,6 +31,28 @@ var coetsubjects = [
 console.log(coetsubjects)
 
 
+// funtions for displaying of list in table
+//reference: https://stackoverflow.com/questions/15164655/generate-html-table-from-2d-javascript-array
+function createTable(tableData) {
+    var table = document.getElementById('allsubtable');
+    var row = {};
+    var cell = {};
+
+    tableData.forEach(function(rowData) {
+        row = table.insertRow(-1); // [-1] for last position in Safari
+        rowData.forEach(function(cellData) {
+            cell = row.insertCell();
+            cell.textContent = cellData;
+        });
+    });
+    //document.body.appendChild(table);
+}
+
+createTable(coetsubjects);
+
+
+
+
 
 //reference: https://www.rgagnon.com/jsdetails/js-0018.html
 //reference: https://stackoverflow.com/questions/19689103/displaying-2d-array-onto-a-table-javascript
@@ -45,10 +67,12 @@ function submitFunction(j) {
 
     //conditions for remove subject
     if (j == 1) {
-        window.alert(coetsubjects);
         for (var i = 0, len = coetsubjects.length; i < len; i++) {
             if (coetsubjects[i][0] === subcode) {
                 coetsubjects.splice(i, 1);
+                // funtions for displaying and refreshing of list in table
+                document.getElementById("allsubtable").innerHTML = "";
+                createTable(coetsubjects);
                 outputText = "Successfully deleted the subject";
                 break; // need this break to prevent multiple results of the same array
             }
@@ -66,7 +90,6 @@ function submitFunction(j) {
 
     //conditions for add subject
     if (j == 2) {
-        window.alert(coetsubjects);
         if ((subcode == "") || (subname == "") || (yearandsem == "")) {
             window.alert("Complete the form plesase");
         } else {
@@ -78,9 +101,11 @@ function submitFunction(j) {
             }
             // conditions or handling errors
             if (outputText == "") {
-                outputText = "Successfully Added";
                 coetsubjects.push([subcode, subname, yearandsem])
-                window.alert(coetsubjects);
+                    // funtions for displaying and refreshing of list in table
+                document.getElementById("allsubtable").innerHTML = "";
+                createTable(coetsubjects);
+                outputText = "Successfully Added";
             }
             // output the result
             window.alert(outputText);
