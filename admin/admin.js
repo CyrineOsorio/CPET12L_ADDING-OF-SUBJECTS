@@ -71,18 +71,16 @@ function submitFunction(j) {
             window.alert("Complete the form plesase");
         } else {
             for (var i = 0, len = coetsubjects.length; i < len; i++) {
-                if (coetsubjects[i][0] != subcode) {
-                    coetsubjects.push([subcode, subname, yearandsem])
-                    outputText = "Successfully Added";
-                    window.alert(coetsubjects);
-
+                if (coetsubjects[i][0] === subcode) {
+                    outputText = "Subject already exist";
                     break; // need this break to prevent multiple results of the same array
                 }
             }
-
             // conditions or handling errors
             if (outputText == "") {
-                window.alert('Subject already exist');
+                outputText = "Successfully Added";
+                coetsubjects.push([subcode, subname, yearandsem])
+                window.alert(coetsubjects);
             }
             // output the result
             window.alert(outputText);
