@@ -8,14 +8,14 @@ var coetsubjects = [
     ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER'],
     ['CHEMGENL-C', 'General Chemistry (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
     ['CPET 1L-C', 'Program Logic and Formulation (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['BET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER'],
-    ['BET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
+    ['ET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER'],
+    ['ET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
     ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER'],
     ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER'],
     //SECOND YEAR - FIRST AND SECOND SEMESTER
     ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
     ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CPE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER'],
+    ['PE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER'],
     ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER'],
     ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER'],
     ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
@@ -29,6 +29,8 @@ var coetsubjects = [
 ];
 //print coetsubjects in console
 console.log(coetsubjects)
+
+
 
 //reference: https://www.rgagnon.com/jsdetails/js-0018.html
 //reference: https://stackoverflow.com/questions/19689103/displaying-2d-array-onto-a-table-javascript
@@ -46,12 +48,15 @@ function submitFunction(j) {
         window.alert(coetsubjects);
         for (var i = 0, len = coetsubjects.length; i < len; i++) {
             if (coetsubjects[i][0] === subcode) {
-                outputText = "Subject already exist";
+                coetsubjects.splice(i, 1);
+                outputText = "Successfully deleted the subject";
                 break; // need this break to prevent multiple results of the same array
             }
         }
         // conditions or handling errors
-        if (outputText == "") {
+        if (subcode == "") {
+            outputText = "Type the subject code, please."
+        } else if (outputText == "") {
             outputText = "Subject didn't exist";
         }
         // output the result
