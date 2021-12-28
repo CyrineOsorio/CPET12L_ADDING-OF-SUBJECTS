@@ -116,4 +116,4 @@ function submitFunction(j) {
 //----------------OFFERED SUBJECTS--------------
 
 // function para sa table sa loob ni offered subjects
-// display na ng laman ng table as checkboxes sa loob ng "edit" button
+// get lahat ng laman loob ni edit na pop up at magdisplay sa offered na div
