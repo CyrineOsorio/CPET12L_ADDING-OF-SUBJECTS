@@ -138,3 +138,6 @@ function getAllSubjects() {
 
     }
 }
+
+//slice natin yung coetsubjects na list para iset natin sila as value nung mga checkboxes.
+// dapat nag iterate yung id at yung for sa label para pag hinover sila yung macclick
