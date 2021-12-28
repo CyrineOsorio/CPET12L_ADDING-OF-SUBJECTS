@@ -117,3 +117,19 @@ function submitFunction(j) {
 
 // function para sa table sa loob ni offered subjects
 // get lahat ng laman loob ni edit na pop up at magdisplay sa offered na div
+
+
+function getAllSubjects() {
+    var mgaCheckedSubject = document.getElementsByName('sub');
+    var listahan1 = [];
+
+
+    for (var checkbox of mgaCheckedSubject) {
+        if (checkbox.checked) {
+            listahan1.push(checkbox.value);
+            console.log(listahan1);
+            listahanOffered.innerHTML = listahan1.map(i => `<li>${i}</li>`).join('');
+        }
+
+    }
+}
