@@ -218,3 +218,11 @@ section {
         justify-content: flex-end;
     }
 }
+
+.modal-body label:hover {
+    cursor: pointer;
+}
+
+.modal-body input:checked {
+    color: red;
+}
