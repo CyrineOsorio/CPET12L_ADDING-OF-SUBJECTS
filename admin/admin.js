@@ -120,14 +120,19 @@ function submitFunction(j) {
 
 
 function getAllSubjects() {
+    //kuhain yung sa checklist na mga nacheck
     var mgaCheckedSubject = document.getElementsByName('sub');
+    //listahan yan, dito mapupunta yung mga nacheck
     var listahan1 = [];
 
-
+    //for every items na nandun sa subject checklist
     for (var checkbox of mgaCheckedSubject) {
+
+        //kapag nacheck yung isang checkbox
         if (checkbox.checked) {
+            //ipupush or idadagdag sa listahan1
             listahan1.push(checkbox.value);
-            console.log(listahan1);
+            //lahat ng nasa listahan1 ay gagawin list sa html yung <li> 
             listahanOffered.innerHTML = listahan1.map(i => `<li>${i}</li>`).join('');
         }
 
