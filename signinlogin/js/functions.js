@@ -53,12 +53,14 @@ function signUp() {
                 fullname = accounts[i][0] + ' ' + accounts[i][1];
                 section = accounts[i][3];
                 stats = accounts[i][6];
+                email = accounts[i][4]
 
                 // student details to transfer data in student page
                 localStorage.setItem("value1", studnum);
                 localStorage.setItem("value2", fullname);
                 localStorage.setItem("value3", section);
                 localStorage.setItem("value4", stats);
+                localStorage.setItem("value5", email);
                 window.location.href = '../students/index.html';
                 console.log(accounts);
                 break; // need this break to prevent multiple results of the same array
@@ -97,6 +99,7 @@ function logIn() {
                 fullname = accounts[i][0] + ' ' + accounts[i][1];
                 section = accounts[i][3];
                 stats = accounts[i][6];
+                email = accounts[i][4]
                 outputText = "Sign in successfully";
                 //print sa console
                 console.log(studnum);
@@ -107,6 +110,7 @@ function logIn() {
                 localStorage.setItem("value2", fullname);
                 localStorage.setItem("value3", section);
                 localStorage.setItem("value4", stats);
+                localStorage.setItem("value5", email);
                 window.location.href = '../students/index.html';
                 console.log(accounts);
                 break; // need this break to prevent multiple results of the same array
@@ -149,6 +153,9 @@ var b = localStorage.getItem("value2");
 var c = localStorage.getItem("value3");
 var d = localStorage.getItem("value4");
 
+//foreign key is email
+var e = localStorage.getItem("value5");
+
 document.getElementById("studentnumber1").innerHTML = a;
 document.getElementById("fullname1").innerHTML = b;
 document.getElementById("section1").innerHTML = c;
@@ -158,4 +165,5 @@ document.getElementById("status1").innerHTML = d;
 console.log(a);
 console.log(b);
 console.log(c);
+console.log(d);
 console.log(d);
