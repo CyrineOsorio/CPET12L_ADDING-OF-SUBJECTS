@@ -62,16 +62,18 @@
         <div class="grades">
             <p>CHECKING OF GRADES</p>
         </div>
+        <form class="needs-validation" name="addremarksform" action="javascript:addremarks();">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">Subject Code</label>
+                    <input type="text" class="form-control" id="validationTooltip01" required>
 
-        <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationTooltip04">Subject Code</label>
-                <select class="custom-select" id="validationTooltip04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>BET1-C</option>
-                </select>
-            </div>
-
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Subject Name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" required>
+                </div>
+             <!--novalidate
             <div class="col-md-4 mb-3">
                 <label for="validationTooltip04">Remarks</label>
                 <select class="custom-select" id="validationTooltip04" required>
@@ -80,10 +82,13 @@
                   <option>Failed</option>
                   <option>Passed</option>
                 </select>
+            
             </div>
-            <div class="remarkbttn">
-                <button class="btn btn-primary" type="submit">Add Remarks</button>
-            </div>
+            -->
+                <div class="remarkbttn">
+                    <button class="btn btn-primary" type="submit">Add Remarks</button>
+                </div>
+            </form>
 
         </div>
 
@@ -109,83 +114,31 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="firstyear" role="tabpanel" aria-labelledby="home-tab">
                     <div class="tableborder">
-                        <table>
+                        <table id= "1stsubjects" >
                             <tr>
-                                <th></th>
-                                <th>SUBJECTS</th>
+                                <th>FIRST SEMESTER</th>
+                            </tr>
+                            <tr>
+                                <th>SUBJECT CODE</th>
+                                <th>DESCRIPTION</th>
                                 <th>FINAL GRADES</th>
                                 <th>GRADE STATUS</th>
                             </tr>
+                        </table>
+                        <table id= "1st2subjects" >
                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>BET1-C Orientation to BET, Seminars and Field Trips</td>
-                                <td></td>
-                                <td></td>
-
+                                <th>SECOND SEMESTER</th>
                             </tr>
                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHEMGEN-C General Chemistry (Lec)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHEMGENL-C General Chemistry (Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CPET 1L-C Program Logic and Formulation (Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>BET1-C Electrical Circuits (Lec)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>BET1L-C Electrical Circuits (Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC1-C Understanding the Self</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC4-C Mathematics in the Modern World 1</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>MATHA05-C Pre-Calculus</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>NSTP1-C National Service Training Program 1</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CPE1-C Physical Fitness</td>
-                                <td></td>
-                                <td></td>
+                                <th>SUBJECT CODE</th>
+                                <th>DESCRIPTION</th>
+                                <th>FINAL GRADES</th>
+                                <th>GRADE STATUS</th>
+                                
                             </tr>
                         </table>
+                    
+                        
                     </div>
 
                     <div class="imgforgrades">
@@ -196,82 +149,14 @@
 
                 <div class="tab-pane fade" id="secondyear" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="tableborder">
-                        <table>
+                        <table id= "2ndsubjects" >
                             <tr>
-                                <th></th>
-                                <th>SUBJECTS</th>
+                                <th>SUBJECT CODE</th>
+                                <th>DESCRIPTION</th>
                                 <th>FINAL GRADES</th>
                                 <th>GRADE STATUS</th>
                             </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>BET1-C Orientation to BET, Seminars and Field Trips</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHEMGEN-C General Chemistry (Lec)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHEMGENL-C General Chemistry (Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CPET 1L-C Program Logic and Formulation (Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>BET1-C Electrical Circuits (Lec)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>BET1L-C Electrical Circuits (Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC1-C Understanding the Self</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC4-C Mathematics in the Modern World 1</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>MATHA05-C Pre-Calculus</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>NSTP1-C National Service Training Program 1</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CPE1-C Physical Fitness</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                            
                         </table>
                     </div>
                     <div class="imgforgrades">
@@ -280,90 +165,16 @@
                     </div>
                 </div>
 
-
                 <div class="tab-pane fade" id="thirdyear" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="tableborder">
-                        <table>
+                        <table id= "3rdsubjects" >
                             <tr>
-                                <th></th>
-                                <th>SUBJECTS</th>
+                                <th>SUBJECT CODE</th>
+                                <th>DESCRIPTION</th>
                                 <th>FINAL GRADES</th>
                                 <th>GRADE STATUS</th>
                             </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CAD-C Computer Aided Drafting</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHET-C Chemistry for Engineering Technologists</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHETL-C Chemistry for Engineering Technologists(Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CPET2L-C Object Oriented Programming 2(Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>EST1-C Electronics 1(Lec)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>EST1L-C Electronics 1 Lab</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC2-C Readings in Philippine History</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC5-C Purposive Communication</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC7-C Science, Technology, and Society</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>MATHA13-C Differential Calculus</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>NSTP2 National Service Training Program 2</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>PE2 Rhythmic Activities</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                            
                         </table>
                     </div>
 
@@ -374,91 +185,16 @@
                 </div>
 
 
-
-
                 <div class="tab-pane fade" id="fourthyear" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="tableborder">
-                        <table>
+                        <table id= "4thsubjects" >
                             <tr>
-                                <th></th>
-                                <th>SUBJECTS</th>
+                                <th>SUBJECT CODE</th>
+                                <th>DESCRIPTION</th>
                                 <th>FINAL GRADES</th>
                                 <th>GRADE STATUS</th>
                             </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CAD-C Computer Aided Drafting</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHET-C Chemistry for Engineering Technologists</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CHETL-C Chemistry for Engineering Technologists(Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>CPET2L-C Object Oriented Programming 2(Lab)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>EST1-C Electronics 1(Lec)</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>EST1L-C Electronics 1 Lab</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC2-C Readings in Philippine History</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC5-C Purposive Communication</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>GEC7-C Science, Technology, and Society</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>MATHA13-C Differential Calculus</td>
-                                <td></td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>NSTP2 National Service Training Program 2</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>PE2 Rhythmic Activities</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                            
                         </table>
                     </div>
 
