@@ -113,6 +113,7 @@ function submitFunction(j) {
     }
 }
 
+<<<<<<< HEAD
 function myFunction() {
     let text = " "
     for (var i = 0, len = coetsubjects.length; i < len; i++) {
@@ -125,3 +126,33 @@ function myFunction() {
 }
 
 myFunction();
+=======
+//----------------OFFERED SUBJECTS--------------
+
+// function para sa table sa loob ni offered subjects
+// get lahat ng laman loob ni edit na pop up at magdisplay sa offered na div
+
+
+function getAllSubjects() {
+    //kuhain yung sa checklist na mga nacheck
+    var mgaCheckedSubject = document.getElementsByName('sub');
+    //listahan yan, dito mapupunta yung mga nacheck
+    var listahan1 = [];
+
+    //for every items na nandun sa subject checklist
+    for (var checkbox of mgaCheckedSubject) {
+
+        //kapag nacheck yung isang checkbox
+        if (checkbox.checked) {
+            //ipupush or idadagdag sa listahan1
+            listahan1.push(checkbox.value);
+            //lahat ng nasa listahan1 ay gagawin list sa html yung <li> 
+            listahanOffered.innerHTML = listahan1.map(i => `<li>${i}</li>`).join('');
+        }
+
+    }
+}
+
+//slice natin yung coetsubjects na list para iset natin sila as value nung mga checkboxes.
+// dapat nag iterate yung id at yung for sa label para pag hinover sila yung macclick
+>>>>>>> 9d18b5897cc7db71ad6ef237f65c891cc90a69bd

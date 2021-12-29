@@ -66,18 +66,13 @@
 
         <div class="main">
 
-            <ol type="1">
-                <li>BET1-C Orientation to BET, Seminars and Field Trips</li>
-                <li>CHEMGEN-C General Chemistry (Lec)</li>
-                <li>CHEMGENL-C General Chemistry (Lab)</li>
-                <li>CPET 1L-C Program Logic and Formulation (Lab)</li>
-
+            <ol type="1" id="listahanOffered">
             </ol>
 
         </div>
         <!-- Button trigger modal -->
         <div class="editbutton" data-toggle="modal" data-target="#exampleModal">
-            <a class="nav-link" href="#add-or-delete-subjects" id="edit" onclick="edit()">Edit <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#add-or-delete-subjects" id="edit">Edit <span class="sr-only">(current)</span></a>
         </div>
         <!-- Modal -->
         <form action="#">
@@ -91,30 +86,30 @@
           </button>
                         </div>
                         <div class="modal-body">
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
+                            <input type="checkbox" id="s1" name="sub" value="BET1-C Orientation to BET, Seminars and Field Trips">
                             <label for="s1">BET1-C Orientation to BET, Seminars and Field Trips</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">CHEMGEN-C General Chemistry (Lec)</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">CPET 1L-C Program Logic and Formulation (Lab)</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">BET1-C Electrical Circuits (Lec)</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">GEC1-C Understanding the Self</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">GEC4-C Mathematics in the Modern World 1</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">MATHA05-C Pre-Calculus</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">NSTP1-C National Service Training Program 1</label><br>
-                            <input type="checkbox" id="s1" name="s1" value="Subjects">
-                            <label for="s1">CPE1-C Physical Fitness</label><br>
+                            <input type="checkbox" id="s2" name="sub" value="CHEMGEN-C General Chemistry (Lec)">
+                            <label for="s2">CHEMGEN-C General Chemistry (Lec)</label><br>
+                            <input type="checkbox" id="s3" name="sub" value="CPET 1L-C Program Logic and Formulation (Lab)">
+                            <label for="s3">CPET 1L-C Program Logic and Formulation (Lab)</label><br>
+                            <input type="checkbox" id="s4" name="sub" value="BET1-C Electrical Circuits (Lec)">
+                            <label for="s4">BET1-C Electrical Circuits (Lec)</label><br>
+                            <input type="checkbox" id="s5" name="sub" value="GEC1-C Understanding the Self">
+                            <label for="s5">GEC1-C Understanding the Self</label><br>
+                            <input type="checkbox" id="s6" name="sub" value="GEC4-C Mathematics in the Modern World 1">
+                            <label for="s6">GEC4-C Mathematics in the Modern World 1</label><br>
+                            <input type="checkbox" id="s7" name="sub" value="MATHA05-C Pre-Calculus">
+                            <label for="s7">MATHA05-C Pre-Calculus</label><br>
+                            <input type="checkbox" id="s8" name="sub" value="NSTP1-C National Service Training Program 1">
+                            <label for="s8">NSTP1-C National Service Training Program 1</label><br>
+                            <input type="checkbox" id="s9" name="sub" value="CPE1-C Physical Fitness">
+                            <label for="s9">CPE1-C Physical Fitness</label><br>
 
 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-dark">Save changes</button>
+                            <button type="button" class="btn btn-dark" id="savechangesbutton" onclick="getAllSubjects()">Save changes</button>
                         </div>
                     </div>
                 </div>
