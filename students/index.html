@@ -92,334 +92,334 @@
             <p>REQUEST OF SUBJECT</p>
         </div>
 
+        <div>
+            <form class="needs-validation" name="addremarksform" action="javascript:addremarks();">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">Subject Code</label>
+                        <input type="text" class="form-control" id="validationTooltip01" required>
 
-        <form class="needs-validation" name="addremarksform" action="javascript:addremarks();">
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
-                    <label for="validationTooltip01">Subject Code</label>
-                    <input type="text" class="form-control" id="validationTooltip01" required>
-
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationTooltip02">Select Grade Here</label>
-                    <input type="text" class="form-control" id="validationTooltip02" required>
-                </div>
-
-                <div class="gradebutton">
-                    <button class="btn btn-primary" type="submit">Submit</button>
-                </div>
-        </form>
-
-
-
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#firstyear" type="button" role="tab" aria-controls="home" aria-selected="true">First Year</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#secondyear" type="button" role="tab" aria-controls="profile" aria-selected="false">Second Year</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#thirdyear" type="button" role="tab" aria-controls="contact" aria-selected="false">Third Year</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#fourthyear" type="button" role="tab" aria-controls="contact" aria-selected="false">Fourth Year</button>
-            </li>
-        </ul>
-
-        <form>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="firstyear" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="tableborder">
-                        <table>
-                            <tr>
-                                <th>SUBJECTS</th>
-                                <th>GRADES</th>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">BET1-C Orientation to BET, Seminars and Field Trips</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHEMGEN-C General Chemistry (Lec)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHEMGENL-C General Chemistry (Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CPET 1L-C Program Logic and Formulation (Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">BET1-C Electrical Circuits (Lec)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">BET1L-C Electrical Circuits (Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC1-C Understanding the Self</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC4-C Mathematics in the Modern World 1</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">MATHA05-C Pre-Calculus</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">NSTP1-C National Service Training Program 1</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CPE1-C Physical Fitness</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                        </table>
                     </div>
-                    <div class="imgforgrades">
-                        <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                        <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="secondyear" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="tableborder">
-                        <table>
-                            <tr>
-                                <th>SUBJECTS</th>
-                                <th>GRADES</th>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">BET1-C Orientation to BET, Seminars and Field Trips</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHEMGEN-C General Chemistry (Lec)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHEMGENL-C General Chemistry (Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CPET 1L-C Program Logic and Formulation (Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">BET1-C Electrical Circuits (Lec)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">BET1L-C Electrical Circuits (Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC1-C Understanding the Self</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC4-C Mathematics in the Modern World 1</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">MATHA05-C Pre-Calculus</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">NSTP1-C National Service Training Program 1</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CPE1-C Physical Fitness</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="imgforgrades">
-                        <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                        <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
-                    </div>
-                </div>
-
-
-                <div class="tab-pane fade" id="thirdyear" role="tabpanel" aria-labelledby="contact-tab">
-                    <div class="tableborder">
-                        <table>
-                            <tr>
-                                <th>SUBJECTS</th>
-                                <th>GRADES</th>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CAD-C Computer Aided Drafting</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHET-C Chemistry for Engineering Technologists</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHETL-C Chemistry for Engineering Technologists(Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CPET2L-C Object Oriented Programming 2(Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">EST1-C Electronics 1(Lec)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">EST1L-C Electronics 1 Lab</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC2-C Readings in Philippine History</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC5-C Purposive Communication</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC7-C Science, Technology, and Society</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">MATHA13-C Differential Calculus</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">NSTP2 National Service Training Program 2</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">PE2 Rhythmic Activities</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                        </table>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltip02">Select Grade Here</label>
+                        <input type="text" class="form-control" id="validationTooltip02" required>
                     </div>
 
-                    <div class="imgforgrades">
-                        <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                        <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
+                    <div class="gradebutton">
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
-                </div>
-
-
-
-
-                <div class="tab-pane fade" id="fourthyear" role="tabpanel" aria-labelledby="contact-tab">
-                    <div class="tableborder">
-                        <table>
-                            <tr>
-                                <th>SUBJECTS</th>
-                                <th>GRADES</th>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CAD-C Computer Aided Drafting</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHET-C Chemistry for Engineering Technologists</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CHETL-C Chemistry for Engineering Technologists(Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">CPET2L-C Object Oriented Programming 2(Lab)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">EST1-C Electronics 1(Lec)</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">EST1L-C Electronics 1 Lab</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC2-C Readings in Philippine History</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC5-C Purposive Communication</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">GEC7-C Science, Technology, and Society</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">MATHA13-C Differential Calculus</td>
-                                <td contenteditable='true'> </td>
-
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">NSTP2 National Service Training Program 2</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                            <tr>
-                                <td id="studentsubjects">PE2 Rhythmic Activities</td>
-                                <td contenteditable='true'> </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="imgforgrades">
-                        <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                        <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
-                    </div><br>
-
-
-
-                </div>
-            </div>
-
-            <div class="submitbutton">
-
-                <input type="button" data-toggle="modal" data-target="#staticBackdrop" value="SUBMIT REQUEST" id="submitbtn">
-
+            </form>
             </div>
 
 
-            <!-- Modal -->
-            <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" style="width: 500px;">
-                    <div class="modal-content">
-                        <div class="modal-header" style="border: transparent;">
 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#firstyear" type="button" role="tab" aria-controls="home" aria-selected="true">First Year</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#secondyear" type="button" role="tab" aria-controls="profile" aria-selected="false">Second Year</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#thirdyear" type="button" role="tab" aria-controls="contact" aria-selected="false">Third Year</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#fourthyear" type="button" role="tab" aria-controls="contact" aria-selected="false">Fourth Year</button>
+                </li>
+            </ul>
+
+            <form>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="firstyear" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tableborder">
+                            <table>
+                                <tr>
+                                    <th>SUBJECTS</th>
+                                    <th>GRADES</th>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">BET1-C Orientation to BET, Seminars and Field Trips</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHEMGEN-C General Chemistry (Lec)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHEMGENL-C General Chemistry (Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CPET 1L-C Program Logic and Formulation (Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">BET1-C Electrical Circuits (Lec)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">BET1L-C Electrical Circuits (Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC1-C Understanding the Self</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC4-C Mathematics in the Modern World 1</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">MATHA05-C Pre-Calculus</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">NSTP1-C National Service Training Program 1</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CPE1-C Physical Fitness</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="imgforgrades">
+                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
+                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="secondyear" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tableborder">
+                            <table>
+                                <tr>
+                                    <th>SUBJECTS</th>
+                                    <th>GRADES</th>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">BET1-C Orientation to BET, Seminars and Field Trips</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHEMGEN-C General Chemistry (Lec)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHEMGENL-C General Chemistry (Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CPET 1L-C Program Logic and Formulation (Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">BET1-C Electrical Circuits (Lec)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">BET1L-C Electrical Circuits (Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC1-C Understanding the Self</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC4-C Mathematics in the Modern World 1</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">MATHA05-C Pre-Calculus</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">NSTP1-C National Service Training Program 1</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CPE1-C Physical Fitness</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="imgforgrades">
+                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
+                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="thirdyear" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tableborder">
+                            <table>
+                                <tr>
+                                    <th>SUBJECTS</th>
+                                    <th>GRADES</th>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CAD-C Computer Aided Drafting</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHET-C Chemistry for Engineering Technologists</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHETL-C Chemistry for Engineering Technologists(Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CPET2L-C Object Oriented Programming 2(Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">EST1-C Electronics 1(Lec)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">EST1L-C Electronics 1 Lab</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC2-C Readings in Philippine History</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC5-C Purposive Communication</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC7-C Science, Technology, and Society</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">MATHA13-C Differential Calculus</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">NSTP2 National Service Training Program 2</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">PE2 Rhythmic Activities</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="imgforgrades">
+                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
+                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="tab-pane fade" id="fourthyear" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tableborder">
+                            <table>
+                                <tr>
+                                    <th>SUBJECTS</th>
+                                    <th>GRADES</th>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CAD-C Computer Aided Drafting</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHET-C Chemistry for Engineering Technologists</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CHETL-C Chemistry for Engineering Technologists(Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">CPET2L-C Object Oriented Programming 2(Lab)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">EST1-C Electronics 1(Lec)</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">EST1L-C Electronics 1 Lab</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC2-C Readings in Philippine History</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC5-C Purposive Communication</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">GEC7-C Science, Technology, and Society</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">MATHA13-C Differential Calculus</td>
+                                    <td contenteditable='true'> </td>
+
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">NSTP2 National Service Training Program 2</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                                <tr>
+                                    <td id="studentsubjects">PE2 Rhythmic Activities</td>
+                                    <td contenteditable='true'> </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="imgforgrades">
+                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
+                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
+                        </div><br>
+
+
+
+                    </div>
+                </div>
+
+                <div class="submitbutton">
+
+                    <input type="button" data-toggle="modal" data-target="#staticBackdrop" value="SUBMIT REQUEST" id="submitbtn">
+
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" style="width: 500px;">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border: transparent;">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
-                        </div>
-                        <div class="modal-body" style="display: grid; justify-items: center;width: 100%;  row-gap: 50px;">
-                            <img src="https://img.icons8.com/office/100/000000/checked--v1.png" />
-                            <h1 style="color: #E2435E;">REQUEST SUBMITTED</h1>
-                        </div>
+                            </div>
+                            <div class="modal-body" style="display: grid; justify-items: center;width: 100%;  row-gap: 50px;">
+                                <img src="https://img.icons8.com/office/100/000000/checked--v1.png" />
+                                <h1 style="color: #E2435E;">REQUEST SUBMITTED</h1>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
     </section>
 
 
