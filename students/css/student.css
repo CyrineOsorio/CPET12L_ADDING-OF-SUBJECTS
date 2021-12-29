@@ -193,6 +193,22 @@ section {
     color: #E2435E;
 }
 
+.gradebutton {
+    align-self: center;
+    margin-top: 15px;
+    width: 400px;
+}
+
+.gradebutton button {
+    background-color: #319AE4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #E2435E;
+}
+
 
 /*table*/
 
