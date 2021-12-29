@@ -15,7 +15,7 @@ function details_hide_show() {
 
 }
 
-var firstsubjects = [
+var firstyearfirstsem = [
     //FIRST YEAR - FIRST  SEMESTER
     ['BET1-C', 'Orientation to BET, Seminars and Field Trips','',''],
     ['CHEMGEN-C', ' General Chemistry (Lec)','',''],
@@ -23,7 +23,7 @@ var firstsubjects = [
     ['CPET 1L-C', ' Program Logic and Formulation (Lab)','','']
 ]
 
-var first2subjects = [
+var firstyearsecondsem = [
     //FIRST YEAR - SECOND SEMESTER
     ['ET1-C', 'Electrical Circuits (Lec)','',''],
     ['ET1L-C', 'Electrical Circuits (Lab)','',''],
@@ -31,7 +31,7 @@ var first2subjects = [
     ['GEC4-C', 'Mathematics in the Modern World 1','','']
 ]
 
-var secondsubjects = [
+var secondyearfirstsem = [
     //FIRST YEAR - FIRST AND SECOND SEMESTER
     ['MATHA05-C', ' Pre-Calculus','',''],
     ['NSTP1-C', ' National Service Training Program 1','',''],
@@ -39,7 +39,15 @@ var secondsubjects = [
     ['CAD-C', ' Computer Aided Drafting','',''],
 ]
 
-var thirdsubjects = [
+var secondyearsecondsem = [
+   
+    ['MATHA05-C', ' Pre-Calculus','',''],
+    ['NSTP1-C', ' National Service Training Program 1','',''],
+    ['PE1-C', ' Physical Fitness','',''],
+    ['CAD-C', ' Computer Aided Drafting','',''],
+]
+
+var thirdyearfirstsem = [
     
     ['MATHA05-C', ' Pre-Calculus','',''],
     ['NSTP1-C', ' National Service Training Program 1','',''],
@@ -48,7 +56,24 @@ var thirdsubjects = [
 
 ]
 
-var fourthsubjects = [
+var thirdyearsecondsem = [
+    
+    ['MATHA05-C', ' Pre-Calculus','',''],
+    ['NSTP1-C', ' National Service Training Program 1','',''],
+    ['PE1-C', ' Physical Fitness','',''],
+    ['CAD-C', ' Computer Aided Drafting','',''],
+
+]
+
+var fourthyearfirstsem = [
+    
+    ['MATHA05-C', ' Pre-Calculus','',''],
+    ['NSTP1-C', ' National Service Training Program 1','',''],
+    ['PE1-C', ' Physical Fitness','',''],
+    ['CAD-C', ' Computer Aided Drafting','',''],
+]
+
+var fourthyearsecondsem = [
     
     ['MATHA05-C', ' Pre-Calculus','',''],
     ['NSTP1-C', ' National Service Training Program 1','',''],
@@ -76,8 +101,8 @@ var fourthsubjects = [
 
 // funtions for displaying of list in table
 //reference: https://stackoverflow.com/questions/15164655/generate-html-table-from-2d-javascript-array
-function createTable(tableData) {
-    var table = document.getElementById('1stsubjects');
+function createTable1a(tableData) {
+    var table = document.getElementById('1a');
     var row = {};
     var cell = {};
 
@@ -91,10 +116,10 @@ function createTable(tableData) {
     //document.body.appendChild(table);
 }
 
-createTable(firstsubjects);
+createTable1a(firstyearfirstsem);
 
-function createTableb(tableData) {
-    var table = document.getElementById('1st2subjects');
+function createTable1b(tableData) {
+    var table = document.getElementById('1b');
     var row = {};
     var cell = {};
 
@@ -108,10 +133,10 @@ function createTableb(tableData) {
     //document.body.appendChild(table);
 }
 
-createTableb(first2subjects);
+createTable1b(firstyearsecondsem);
 
-function createTable1(tableData) {
-    var table = document.getElementById('2ndsubjects');
+function createTable2a(tableData) {
+    var table = document.getElementById('2a');
     var row = {};
     var cell = {};
 
@@ -125,10 +150,10 @@ function createTable1(tableData) {
     //document.body.appendChild(table);
 }
 
-createTable1(secondsubjects);
+createTable2a(secondyearfirstsem);
 
-function createTable2(tableData) {
-    var table = document.getElementById('3rdsubjects');
+function createTable2b(tableData) {
+    var table = document.getElementById('2b');
     var row = {};
     var cell = {};
 
@@ -142,10 +167,12 @@ function createTable2(tableData) {
     //document.body.appendChild(table);
 }
 
-createTable2(thirdsubjects);
+createTable2b(secondyearsecondsem);
 
-function createTable3(tableData) {
-    var table = document.getElementById('4thsubjects');
+
+
+function createTable3a(tableData) {
+    var table = document.getElementById('3a');
     var row = {};
     var cell = {};
 
@@ -159,7 +186,58 @@ function createTable3(tableData) {
     //document.body.appendChild(table);
 }
 
-createTable3(fourthsubjects);
+createTable3a(thirdyearfirstsem);
+
+function createTable3b(tableData) {
+    var table = document.getElementById('3b');
+    var row = {};
+    var cell = {};
+
+    tableData.forEach(function(rowData) {
+        row = table.insertRow(-1); // [-1] for last position in Safari
+        rowData.forEach(function(cellData) {
+            cell = row.insertCell();
+            cell.textContent = cellData;
+        });
+    });
+    //document.body.appendChild(table);
+}
+
+createTable3b(thirdyearsecondsem);
+
+function createTable4a(tableData) {
+    var table = document.getElementById('4a');
+    var row = {};
+    var cell = {};
+
+    tableData.forEach(function(rowData) {
+        row = table.insertRow(-1); // [-1] for last position in Safari
+        rowData.forEach(function(cellData) {
+            cell = row.insertCell();
+            cell.textContent = cellData;
+        });
+    });
+    //document.body.appendChild(table);
+}
+
+createTable4a(fourthyearfirstsem);
+
+function createTable4b(tableData) {
+    var table = document.getElementById('4b');
+    var row = {};
+    var cell = {};
+
+    tableData.forEach(function(rowData) {
+        row = table.insertRow(-1); // [-1] for last position in Safari
+        rowData.forEach(function(cellData) {
+            cell = row.insertCell();
+            cell.textContent = cellData;
+        });
+    });
+    //document.body.appendChild(table);
+}
+
+createTable4b(fourthyearsecondsem);
 
 
 
