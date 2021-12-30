@@ -17,7 +17,7 @@ function details_hide_show() {
 
 var firstyearfirstsem = [
     //FIRST YEAR - FIRST  SEMESTER
-    ['BET1-C', 'Orientation to BET, Seminars and Field Trips','',''],
+    ['BET1-C', 'Orientation to BET, Seminars and Field Trips'],
     ['CHEMGEN-C', ' General Chemistry (Lec)','',''],
     ['CHEMGENL-C', ' General Chemistry (Lab)','',''],
     ['CPET 1L-C', ' Program Logic and Formulation (Lab)','','']
@@ -248,7 +248,23 @@ function addremarks() {
     var subjectcode = document.forms["addremarksform"]['validationTooltip01'].value;
     var remarks = document.forms["addremarksform"]['validationTooltip02'].value;
 
-  window.alert(subjectcode)
+    //window.alert(subjectcode)
+
+    for (var i = 0, len = firstyearfirstsem.length; i < len; i++) {
+        if (firstyearfirstsem[i][0] === subjectcode) {
+            window.alert("cahaka")
+            //coetsubjects.splice(i, 1);
+            // funtions for displaying and refreshing of list in table
+            //document.getElementById("1a").innerHTML = "";
+            //createTable1a(firstyearfirstsem);
+            //outputText = "Remarks added";
+            break; // need this break to prevent multiple results of the same array
+        }
+        else {
+            window.alert("boom")
+            break;
+        }
+    }
 
     //outputText = "";
 
