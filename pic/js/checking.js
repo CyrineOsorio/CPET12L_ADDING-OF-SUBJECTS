@@ -254,22 +254,24 @@ function addremarks() {
 
     for (var i = 0, len = firstyearfirstsem.length; i < len; i++) {
         if (firstyearfirstsem[i][0] === subjectcode) {
-            //outputText = "Andito";
+            outputText = "Remarks Added";
             //coetsubjects.splice(i, 1);
             // funtions for displaying and refreshing of list in table
             //document.getElementById("1a").innerHTML = "";
             //createTable1a(firstyearfirstsem);
-            outputText = "Remarks added";
+            //outputText = "Remarks added";
             break; // need this break to prevent multiple results of the same array
         }
     }
     if (subjectcode == "") {
-        outputText = "walarito"
+        outputText = "Please enter subject code"
     } else if (outputText == "") {
-        outputText = "wala po rito";
+        outputText = "Subject not found";
     }
     // output the result
     window.alert(outputText);
+
+
    
     
     
