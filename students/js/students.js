@@ -93,7 +93,6 @@ var coetsubjects = [
 
 function displayTable() {
 
-
     var table = document.getElementById('fyfs1');
     var len = coetsubjects.length;
     for (let i = 0; i < len; i++) {
@@ -116,11 +115,3 @@ function displayTable() {
 }
 
 displayTable();
-
-
-/*
-
-var x = coetsubjects[i][0];
-students_grade.push([e, x]);
-window.alert(e)
-*/
