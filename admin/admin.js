@@ -3,6 +3,7 @@
 
 //All Subjects
 var coetsubjects = [
+
     //FIRST YEAR - FIRST AND SECOND SEMESTER
     ['BET1-C', 'Orientation to BET, Seminars and Field Trips', 'FIRST YEAR - FIRST SEMESTER'],
     ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER'],
@@ -12,6 +13,7 @@ var coetsubjects = [
     ['ET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
     ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER'],
     ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER'],
+
     //SECOND YEAR - FIRST AND SECOND SEMESTER
     ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
     ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER'],
@@ -20,11 +22,27 @@ var coetsubjects = [
     ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER'],
     ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
     ['CPET2L-C', 'Object Oriented Programming 2(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
-    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER']
-    //THIRD YEAR - FIRST AND SECOND SEMESTER
+    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER'],
 
+    //THIRD YEAR - FIRST AND SECOND SEMESTER
+    ['EST1L-C', 'Electronics 1 Lab', 'THIRD YEAR - FIRST SEMESTER'],
+    ['GEC2-C', 'Readings in Philippine History', 'THIRD YEAR - SECOND SEMESTER'],
+    ['GEC5-C', 'Purposive Communication', 'THIRD YEAR - FIRST SEMESTER'],
+    ['GEC7-C', 'Science, Technology, and Society', 'THIRD YEAR - SECOND SEMESTER'],
+    ['MATHA13-C', 'Differential Calculus', 'THIRD YEAR - FIRST SEMESTER'],
+    ['NSTP2-C', 'National Service Training Program 2', 'THIRD YEAR - SECOND SEMESTER'],
+    ['PE2-C', 'Rhythmic Activities', 'THIRD YEAR - FIRST SEMESTER'],
+    ['CPET3-C', 'Logic Circuits and Switching Theory Lec.', 'THIRD YEAR - SECOND SEMESTER'],
 
     //FOURTH YEAR - FIRST AND SECOND SEMESTER
+    ['CPET3L-C', 'Logic Circuits and Switching Theory Lab.', 'FOURTH YEAR - FIRST SEMESTER'],
+    ['CPET4-C', 'Data and Digital Communcations', 'FOURTH YEAR - SECOND SEMESTER'],
+    ['CPET5L-C', 'Data Structures and Algorithms Lab.', 'FOURTH YEAR - FIRST SEMESTER'],
+    ['CPET6L-C', 'Introduction to Hardware Description Language', 'FOURTH YEAR - SECOND SEMESTER'],
+    ['GEC8-C', 'Ethics', 'FOURTH YEAR - FIRST SEMESTER'],
+    ['GEM14-C', 'Life and Works of Rizal', 'FOURTH YEAR - SECOND SEMESTER'],
+    ['MATHA23-C', 'Integral Calculus', 'FOURTH YEAR - FIRST SEMESTER'],
+    ['PE3-C', 'Individual and Dual Sports', 'FOURTH YEAR - SECOND SEMESTER']
 
 ];
 //print coetsubjects in console
