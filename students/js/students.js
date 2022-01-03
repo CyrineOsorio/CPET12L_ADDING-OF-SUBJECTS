@@ -87,27 +87,17 @@ var coetsubjects = [
     ['MATHA23-C', 'Integral Calculus', 'FOURTH YEAR - FIRST SEMESTER'],
     ['PE3-C', 'Individual and Dual Sports', 'FOURTH YEAR - SECOND SEMESTER']
 
+
 ]
 
 
-
-students_grade.push([e]);
-window.alert(students_grade)
-
-function myFunction() {
-    let m = "";
-    var len = coetsubjects.length;
-    for (let m = 0; m < len; m++) {
-        var x = coetsubjects[i][0];
-
-    }
-}
-
 function displayTable() {
-    let i = "";
+
+
     var table = document.getElementById('fyfs1');
     var len = coetsubjects.length;
     for (let i = 0; i < len; i++) {
+
         //add row
         var row = table.insertRow();
         //add cells
@@ -121,6 +111,16 @@ function displayTable() {
 
         //add onclick
         document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
+
     }
 }
+
 displayTable();
+
+
+/*
+
+var x = coetsubjects[i][0];
+students_grade.push([e, x]);
+window.alert(e)
+*/
