@@ -10,6 +10,7 @@ var accounts = [
 
 //print accounts in console
 console.log(accounts)
+localStorage.setItem("value7", accounts);
 
 
 // search the email in array

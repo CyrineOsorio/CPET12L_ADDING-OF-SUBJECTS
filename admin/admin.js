@@ -48,6 +48,9 @@ var coetsubjects = [
 //print coetsubjects in console
 console.log(coetsubjects)
 
+//get the var coetsubjects to set in students page
+localStorage.setItem("value6", coetsubjects);
+
 
 // funtions for displaying of list in table
 //reference: https://stackoverflow.com/questions/15164655/generate-html-table-from-2d-javascript-array

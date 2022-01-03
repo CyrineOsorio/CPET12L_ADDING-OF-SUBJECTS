@@ -17,6 +17,7 @@ function details_hide_show() {
     }
 }
 
+
 //source = https://pretagteam.com/question/how-can-i-pass-data-from-one-html-page-to-another-using-javascript
 
 //displaying student details when student signing in or creating
@@ -27,6 +28,7 @@ var d = localStorage.getItem("value4");
 
 //foreign key is email
 var e = localStorage.getItem("value5");
+
 
 document.getElementById("studentnumber1").innerHTML = a;
 document.getElementById("fullname1").innerHTML = b;
@@ -43,3 +45,21 @@ console.log(e);
 var students_grade = []
 
 students_grade.push([e])
+
+
+
+function displayTable(tableData) {
+    var table = document.getElementById('');
+    var row = {};
+    var cell = {};
+
+    tableData.forEach(function(rowData) {
+        row = table.insertRow(-1); // [-1] for last position in Safari
+        rowData.forEach(function(cellData) {
+            cell = row.insertCell();
+            cell.textContent = cellData;
+        });
+    });
+}
+
+displayTable();
