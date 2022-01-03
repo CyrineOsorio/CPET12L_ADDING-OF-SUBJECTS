@@ -44,12 +44,12 @@ var coetsubjects = [
     ['MATHA23-C', 'Integral Calculus', 'FOURTH YEAR - FIRST SEMESTER'],
     ['PE3-C', 'Individual and Dual Sports', 'FOURTH YEAR - SECOND SEMESTER']
 
-];
+]
+
+
 //print coetsubjects in console
 console.log(coetsubjects)
 
-//get the var coetsubjects to set in students page
-localStorage.setItem("value6", coetsubjects);
 
 
 // funtions for displaying of list in table

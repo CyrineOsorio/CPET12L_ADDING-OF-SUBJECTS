@@ -6,11 +6,11 @@ var accounts = [
     ["ASPHER", "HINACAY", "TUPC-19-0002", 'BET-COET-S-3B', "email3@gmail.com", "password3", "Processing"],
     ["JAIRUS", "SAMBAJON", "TUPC-19-0003", 'BET-COET-S-3B', "email4@gmail.com", "password4", "Processing"],
     ["RAY", "VEGA", "TUPC-19-0004", 'BET-COET-S-3B', "email5@gmail.com", "password5", "Processing"]
-];
+]
 
 //print accounts in console
-console.log(accounts)
-localStorage.setItem("value7", accounts);
+console.log(accounts);
+
 
 
 // search the email in array
