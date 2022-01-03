@@ -96,18 +96,25 @@ window.alert(students_grade)
 
 
 
-function displayTable(tableData) {
-    var table = document.getElementById('');
-    var row = {};
-    var cell = {};
 
-    tableData.forEach(function(rowData) {
-        row = table.insertRow(-1); // [-1] for last position in Safari
-        rowData.forEach(function(cellData) {
-            cell = row.insertCell();
-            cell.textContent = cellData;
-        });
-    });
+function displayTable() {
+    let i = "";
+    var table = document.getElementById('fyfs');
+    var len = coetsubjects.length;
+    for (let i = 0; i < len; i++) {
+        //add row
+        var row = table.insertRow();
+        //add cells
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+
+        cell1.inneHTML = coetsubjects[i][0];
+        cell2.inneHTML = coetsubjects[i][1];
+        cell3.inneHTML = coetsubjects[i][2];
+
+        //add onclick
+        document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
+    }
 }
-
 displayTable();

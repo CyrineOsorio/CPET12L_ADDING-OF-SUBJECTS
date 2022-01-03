@@ -229,11 +229,18 @@ th {
     text-align: left;
     border-collapse: separate;
     border-spacing: 10px;
+    color: black;
 }
 
 td {
     border: transparent;
     border-bottom: 1px solid #E2435E;
+    color: black;
+}
+
+tr {
+    height: 12px;
+    color: black;
 }
 
 
