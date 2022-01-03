@@ -99,7 +99,7 @@ window.alert(students_grade)
 
 function displayTable() {
     let i = "";
-    var table = document.getElementById('fyfs');
+    var table = document.getElementById('fyfs1');
     var len = coetsubjects.length;
     for (let i = 0; i < len; i++) {
         //add row
@@ -109,9 +109,9 @@ function displayTable() {
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
 
-        cell1.inneHTML = coetsubjects[i][0];
-        cell2.inneHTML = coetsubjects[i][1];
-        cell3.inneHTML = coetsubjects[i][2];
+        cell1.innerHTML = coetsubjects[i][0];
+        cell2.innerHTML = coetsubjects[i][1];
+        cell3.innerHTML = coetsubjects[i][2];
 
         //add onclick
         document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
