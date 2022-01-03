@@ -94,8 +94,14 @@ var coetsubjects = [
 students_grade.push([e]);
 window.alert(students_grade)
 
+function myFunction() {
+    let m = "";
+    var len = coetsubjects.length;
+    for (let m = 0; m < len; m++) {
+        var x = coetsubjects[i][0];
 
-
+    }
+}
 
 function displayTable() {
     let i = "";
@@ -111,7 +117,7 @@ function displayTable() {
 
         cell1.innerHTML = coetsubjects[i][0];
         cell2.innerHTML = coetsubjects[i][1];
-        cell3.innerHTML = coetsubjects[i][2];
+        cell3.innerHTML = '';
 
         //add onclick
         document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
