@@ -14,6 +14,8 @@ function details_hide_show() {
     }
 
 }
+var ffremarks = []
+
 
 var firstyearfirstsem = [
     //FIRST YEAR - FIRST  SEMESTER
@@ -247,12 +249,12 @@ function addremarks() {
 
     var subjectcode = document.forms["addremarksform"]['validationTooltip01'].value;
     var remarks = document.forms["addremarksform"]['validationTooltip02'].value;
-
+    outputText = "";
     //window.alert(subjectcode)
 
     for (var i = 0, len = firstyearfirstsem.length; i < len; i++) {
         if (firstyearfirstsem[i][0] === subjectcode) {
-            window.alert("cahaka")
+            outputText = "Remarks Added";
             //coetsubjects.splice(i, 1);
             // funtions for displaying and refreshing of list in table
             //document.getElementById("1a").innerHTML = "";
@@ -260,12 +262,22 @@ function addremarks() {
             //outputText = "Remarks added";
             break; // need this break to prevent multiple results of the same array
         }
-        else {
-            window.alert("boom")
-            break;
-        }
     }
+    if (subjectcode == "") {
+        outputText = "Please enter subject code"
+    } else if (outputText == "") {
+        outputText = "Subject not found";
+    }
+    // output the result
+    window.alert(outputText);
 
+
+   
+    
+    
+
+
+    
     //outputText = "";
 
     // search each cell for the query string
