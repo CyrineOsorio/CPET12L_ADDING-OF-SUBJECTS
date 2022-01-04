@@ -134,6 +134,7 @@ function addGrades() {
             coetsubjects[i] = [x, y, z, grade]
 
 
+
             //refresh table
             document.getElementById("fyfs").innerHTML = "";
 
@@ -167,6 +168,7 @@ function addGrades() {
 
 /*
 function studentGrade() {
+    window.alert(students_grade);
     let y = ''
     students_grade.push([e]);
     window.alert(students_grade);
@@ -184,6 +186,4 @@ function studentGrade() {
     window.alert(students_grade);
     window.alert(coetsubjects);
 }
-
-studentGrade();
 */
