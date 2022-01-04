@@ -114,125 +114,39 @@
 
 
 
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#firstyear" type="button" role="tab" aria-controls="home" aria-selected="true">First Year</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#secondyear" type="button" role="tab" aria-controls="profile" aria-selected="false">Second Year</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#thirdyear" type="button" role="tab" aria-controls="contact" aria-selected="false">Third Year</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#fourthyear" type="button" role="tab" aria-controls="contact" aria-selected="false">Fourth Year</button>
-                </li>
-            </ul>
 
             <form>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="firstyear" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="tableborder">
-                            <table id="fyfs">
-                                <legend>ALL YEAR - ALL SEMESTER</legend>
-                                <thead>
-                                    <th>SUBJECT CODE</th>
-                                    <th>SUBJECT NAME</th>
-                                    <th>GRADES</th>
-                                </thead>
 
+                    <div class="tableborder">
+                        <table>
+                            <legend>ALL YEAR - ALL SEMESTER</legend>
+                            <thead>
+                                <th>SUBJECT CODE</th>
+                                <th>SUBJECT NAME</th>
+                                <th>YEAR AND SEMESTER</th>
+                                <th>GRADES</th>
+                            </thead>
+                            <tbody id="fyfs">
 
-                            </table>
-                        </div>
-                        <div class="imgforgrades">
-                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
-                        </div>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="imgforgrades">
+                        <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
+                        <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
                     </div>
 
 
-                    <div class="tab-pane fade" id="secondyear" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="tableborder">
-                            <table id="fyss">
-                                <tr>
-                                    <th>SUBJECTS</th>
-                                    <th>GRADES</th>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="imgforgrades">
-                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
-                        </div>
-                    </div>
-
-
-                    <div class="tab-pane fade" id="thirdyear" role="tabpanel" aria-labelledby="contact-tab">
-                        <div class="tableborder">
-                            <table id="syfs">
-                                <tr>
-                                    <th>SUBJECTS</th>
-                                    <th>GRADES</th>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="imgforgrades">
-                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="tab-pane fade" id="fourthyear" role="tabpanel" aria-labelledby="contact-tab">
-                        <div class="tableborder">
-                            <table id="syss">
-                                <tr>
-                                    <th>SUBJECTS</th>
-                                    <th>GRADES</th>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="imgforgrades">
-                            <p>*Input your previous grades on the following academic year and upload a photo from ers as a proof.</p>
-                            <input type="file" id="gradesfile" accept=".jpg, .png, .jpeg">
-                        </div><br>
-                    </div>
-
-
-
-
-                </div>
-
-                <div class="submitbutton">
-                    <form name="student_grade" action="javascript:studentGrade();">
-                        <!--<input type="submit" value="SUBMIT REQUEST">
+                    <div class="submitbutton">
+                        <form name="student_grade" action="javascript:studentGrade();">
+                            <!--<input type="submit" value="SUBMIT REQUEST">
                         <input type="button" data-toggle="modal" data-target="#staticBackdrop" value="SUBMIT REQUEST" id="submitbtn">-->
-                    </form>
-                </div>
-
-
-                <!-- Modal -->
-                <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" style="width: 500px;">
-                        <div class="modal-content">
-                            <div class="modal-header" style="border: transparent;">
-
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                            </div>
-                            <div class="modal-body" style="display: grid; justify-items: center;width: 100%;  row-gap: 50px;">
-                                <img src="https://img.icons8.com/office/100/000000/checked--v1.png" />
-                                <h1 style="color: #E2435E;">REQUEST SUBMITTED</h1>
-                            </div>
-
-                        </div>
+                        </form>
                     </div>
-                </div>
+
+
     </section>
 
     <div class="submitbutton">
