@@ -166,9 +166,9 @@ function addGrades() {
     window.alert(outputText)
 }
 
-/*
+
 function studentGrade() {
-    window.alert(students_grade);
+    window.alert("Are you sure you want to Submitted it? Once you Submit it you can not change it for good.");
     let y = ''
     students_grade.push([e]);
     window.alert(students_grade);
@@ -184,6 +184,4 @@ function studentGrade() {
 
     }
     window.alert(students_grade);
-    window.alert(coetsubjects);
 }
-*/
