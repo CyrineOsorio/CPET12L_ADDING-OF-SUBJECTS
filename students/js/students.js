@@ -42,6 +42,7 @@ console.log(c);
 console.log(d);
 console.log(e);
 
+// student grades
 var students_grade = []
 
 //All Subjects
@@ -163,3 +164,26 @@ function addGrades() {
     }
     window.alert(outputText)
 }
+
+/*
+function studentGrade() {
+    let y = ''
+    students_grade.push([e]);
+    window.alert(students_grade);
+    for (var i = 0, len = students_grade.length; i < len; i++) {
+        x = students_grade[i];
+        if (e == x) {
+            for (var j = 0, len = coetsubjects.length; j < len; j++) {
+                y += coetsubjects[j];
+                //update the matrix
+                students_grade[i] = [e, y];
+            }
+        }
+
+    }
+    window.alert(students_grade);
+    window.alert(coetsubjects);
+}
+
+studentGrade();
+*/
