@@ -129,10 +129,12 @@ function submitFunction(j) {
                 outputText = "Successfully Added";
             }
             // output the result
-            window.alert(outputText);
+            // window.alert(outputText);
         }
+        magingCheckbox();
     }
 }
+
 
 function myFunction() {
     let text = " "
@@ -175,3 +177,15 @@ function getAllSubjects() {
 
 //slice natin yung coetsubjects na list para iset natin sila as value nung mga checkboxes.
 // dapat nag iterate yung id at yung for sa label para pag hinover sila yung macclick
+
+function magingCheckbox() {
+    let ipiprint = " "
+    for (var i = 0, len = coetsubjects.length; i < len; i++) {
+        a = coetsubjects[i][0]
+        b = coetsubjects[i][1]
+        ipiprint += a + "-" + b + "\n"
+        console.log(ipiprint)
+
+        // creating checkboxes
+    }
+}
