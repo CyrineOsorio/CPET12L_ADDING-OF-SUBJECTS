@@ -115,3 +115,45 @@ function displayTable() {
 }
 
 displayTable();
+
+
+function addGrades() {
+    var subcode = document.forms["add_grades"]['validationTooltip01'].value;
+    var grade = document.forms["add_grades"]['validationTooltip02'].value;
+
+
+    //find the subject code and update the grade element
+    for (var i = 0, len = coetsubjects.length; i < len; i++) {
+        x = coetsubjects[i][0]
+        y = coetsubjects[i][1]
+        z = coetsubjects[i][2]
+        if (x == subcode) {
+            //update the matrix
+            coetsubjects[i] = [x, y, z, grade]
+
+
+            //refresh table
+            document.getElementById("fyfs1").innerHTML = "";
+
+            var table = document.getElementById('fyfs1');
+            var len = coetsubjects.length;
+            for (let i = 0; i < len; i++) {
+
+                //add row
+                var row = table.insertRow();
+                //add cells
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+
+                cell1.innerHTML = coetsubjects[i][0];
+                cell2.innerHTML = coetsubjects[i][1];
+                cell3.innerHTML = coetsubjects[i][3];;
+
+                //add onclick
+                document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
+
+            }
+        }
+    }
+}
