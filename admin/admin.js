@@ -186,5 +186,43 @@ function magingCheckbox() {
         console.log(ipiprint)
 
         // creating checkboxes
+
+
+
     }
+}
+
+// function displayOnEdit() {
+
+//     var x = document.createElement("INPUT")
+//     var y = document.createElement("LABEL")
+//     x.setAttribute("type", "checkbox")
+//     x.setAttribute("name", "hatdog")
+//     x.setAttribute("id", "s1")
+//     y.setAttribute("for", "s1")
+
+
+//     document.getElementById('modalBody').appendChild(x);
+//     document.getElementById('modalBody').appendChild(y);
+// }
+
+
+// tryyyyyyyyyyyyyyyyyyyy
+
+
+function displayOnEdit() {
+
+    let ipiprint = " "
+    for (var i = 0, len = coetsubjects.length; i < len; i++) {
+        a = coetsubjects[i][0]
+        b = coetsubjects[i][1]
+        ipiprint += a + "-" + b + "\n"
+        pangID = "s" + i
+
+        $('#modalBody')
+            .append(`<input type="checkbox" id="${pangID}" name="sub" value="${ipiprint}">`)
+            .append(`<label for="${pangID}">${ipiprint}</label></div>`)
+    }
+    console.log("hatdog");
+
 }
