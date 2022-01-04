@@ -214,16 +214,36 @@ function magingCheckbox() {
 function displayOnEdit() {
 
     let ipiprint = " "
+    let pangID = ""
+    var listahan2 = [];
+    var listahan3 = [];
     for (var i = 0, len = coetsubjects.length; i < len; i++) {
         a = coetsubjects[i][0]
         b = coetsubjects[i][1]
-        ipiprint += a + "-" + b + "\n"
+        ipiprint = a + "-" + b
         pangID = "s" + i
+        listahan2.push(ipiprint)
+        listahan3.push(pangID)
 
-        $('#modalBody')
-            .append(`<input type="checkbox" id="${pangID}" name="sub" value="${ipiprint}">`)
-            .append(`<label for="${pangID}">${ipiprint}</label></div>`)
+
     }
-    console.log("hatdog");
+
+
+
+    for (var j of listahan2) {
+        for (var h of listahan3) {
+            $('#modalBody')
+                .append(`<input type="checkbox" id="${h}" name="sub" value="${j}">`)
+                .append(`<label for="${h}">${j}</label></div>`)
+        }
+    }
+
+
+
+
+
+
+
+
 
 }
