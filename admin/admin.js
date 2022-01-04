@@ -108,10 +108,11 @@ function submitFunction(j) {
                 outputText = "Successfully Added";
             }
             // output the result
-            window.alert(outputText);
+            // window.alert(outputText);
         }
     }
 }
+
 
 function myFunction() {
     let text = " "
