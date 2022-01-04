@@ -171,7 +171,6 @@ function studentGrade() {
     window.alert("Are you sure you want to Submitted it? Once you Submit it you can not change it for good.");
     let y = ''
     students_grade.push([e]);
-    window.alert(students_grade);
     for (var i = 0, len = students_grade.length; i < len; i++) {
         x = students_grade[i];
         if (e == x) {
