@@ -164,12 +164,14 @@ function studentGrade() {
             }
 
         }
+        document.getElementById("validationTooltip01").innerHTML = "";
+        document.getElementById("validationTooltip02").innerHTML = "";
         document.getElementById("validationTooltip01").disabled = true;
         document.getElementById("validationTooltip02").disabled = true;
         document.getElementById("updategrade").disabled = true;
         document.getElementById("submitbtn").disabled = true;
         window.alert(students_grade);
     } else {
-        text = "You canceled!";
+        window.alert("You canceled!");
     }
 }
