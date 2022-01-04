@@ -168,19 +168,26 @@ function addGrades() {
 
 
 function studentGrade() {
-    window.alert("Are you sure you want to Submitted it? Once you Submit it you can not change it for good.");
-    let y = ''
-    students_grade.push([e]);
-    for (var i = 0, len = students_grade.length; i < len; i++) {
-        x = students_grade[i];
-        if (e == x) {
-            for (var j = 0, len = coetsubjects.length; j < len; j++) {
-                y += coetsubjects[j];
-                //update the matrix
-                students_grade[i] = [e, y];
+    if (confirm("Are you sure you want to Submitted it? Once you Submit it you can not change it for good.") == true) {
+        let y = ''
+        students_grade.push([e]);
+        for (var i = 0, len = students_grade.length; i < len; i++) {
+            x = students_grade[i];
+            if (e == x) {
+                for (var j = 0, len = coetsubjects.length; j < len; j++) {
+                    y += coetsubjects[j];
+                    //update the matrix
+                    students_grade[i] = [e, y];
+                }
             }
-        }
 
+        }
+        document.getElementById("validationTooltip01").disabled = true;
+        document.getElementById("validationTooltip02").disabled = true;
+        document.getElementById("updategrade").disabled = true;
+        document.getElementById("submitbtn").disabled = true;
+        window.alert(students_grade);
+    } else {
+        text = "You canceled!";
     }
-    window.alert(students_grade);
 }
