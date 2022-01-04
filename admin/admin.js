@@ -139,8 +139,9 @@ function myFunction() {
     for (var i = 0, len = coetsubjects.length; i < len; i++) {
         a = coetsubjects[i][0]
         b = coetsubjects[i][1]
-        text += a + " " + b + "<br>"
+        text += a + " " + b
     }
+    window.alert(text)
 
 }
 
