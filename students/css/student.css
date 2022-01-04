@@ -199,7 +199,7 @@ section {
     width: 400px;
 }
 
-.gradebutton button {
+.gradebutton input {
     background-color: #319AE4;
     color: white;
     border: none;

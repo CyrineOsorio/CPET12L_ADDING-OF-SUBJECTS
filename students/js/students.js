@@ -93,7 +93,7 @@ var coetsubjects = [
 
 function displayTable() {
 
-    var table = document.getElementById('fyfs1');
+    var table = document.getElementById('fyfs');
     var len = coetsubjects.length;
     for (let i = 0; i < len; i++) {
 
@@ -121,6 +121,7 @@ function addGrades() {
     var subcode = document.forms["add_grades"]['validationTooltip01'].value;
     var grade = document.forms["add_grades"]['validationTooltip02'].value;
 
+    var outputText = ""
 
     //find the subject code and update the grade element
     for (var i = 0, len = coetsubjects.length; i < len; i++) {
@@ -133,9 +134,9 @@ function addGrades() {
 
 
             //refresh table
-            document.getElementById("fyfs1").innerHTML = "";
+            document.getElementById("fyfs").innerHTML = "";
 
-            var table = document.getElementById('fyfs1');
+            var table = document.getElementById('fyfs');
             var len = coetsubjects.length;
             for (let i = 0; i < len; i++) {
 
@@ -154,6 +155,11 @@ function addGrades() {
                 document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
 
             }
+            outputText = "Successfully Update the Grade"
         }
     }
+    if (outputText == "") {
+        outputText = "Subject Code Not Existing"
+    }
+    window.alert(outputText)
 }
