@@ -104,10 +104,12 @@ function displayTable() {
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
 
         cell1.innerHTML = coetsubjects[i][0];
         cell2.innerHTML = coetsubjects[i][1];
-        cell3.innerHTML = '';
+        cell3.innerHTML = coetsubjects[i][2];
+        cell4.innerHTML = coetsubjects[i][3];
 
         //add onclick
         document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
@@ -133,41 +135,21 @@ function addGrades() {
             //update the matrix
             coetsubjects[i] = [x, y, z, grade]
 
-
-
-            //refresh table
-            document.getElementById("fyfs").innerHTML = "";
-
-            var table = document.getElementById('fyfs');
-            var len = coetsubjects.length;
-            for (let i = 0; i < len; i++) {
-
-                //add row
-                var row = table.insertRow();
-                //add cells
-                var cell1 = row.insertCell(0);
-                var cell2 = row.insertCell(1);
-                var cell3 = row.insertCell(2);
-
-                cell1.innerHTML = coetsubjects[i][0];
-                cell2.innerHTML = coetsubjects[i][1];
-                cell3.innerHTML = coetsubjects[i][3];;
-
-                //add onclick
-                document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
-
-            }
             outputText = "Successfully Update the Grade"
         }
     }
     if (outputText == "") {
         outputText = "Subject Code Not Existing"
     }
+    //refresh table
+    document.getElementById("fyfs").innerHTML = "";
+    displayTable()
     window.alert(outputText)
 }
 
 
 function studentGrade() {
+
     if (confirm("Are you sure you want to Submitted it? Once you Submit it you can not change it for good.") == true) {
         let y = ''
         students_grade.push([e]);
