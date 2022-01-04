@@ -16,6 +16,8 @@ function details_hide_show() {
 }
 
 
+
+
 // student grades
 var students_grade = [
     //FIRST YEAR - FIRST AND SECOND SEMESTER
@@ -102,7 +104,7 @@ function addremarks() {
 
     var outputText = ""
 
-    //find the subject code and update the grade element
+    //find the subject code and update the remark element
     for (var i = 0, len = students_grade.length; i < len; i++) {
         w = students_grade[i][0]
         x = students_grade[i][1]
@@ -125,9 +127,10 @@ function addremarks() {
 }
 
 
+
 /*
 
-function studentGrade() {
+function submitToAdmin() {
 
     if (confirm("Are you sure you want to Submitted it? Once you Submit it you can not change it for good.") == true) {
         let y = ''
