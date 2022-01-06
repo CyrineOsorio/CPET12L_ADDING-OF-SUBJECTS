@@ -128,10 +128,7 @@ function addremarks() {
 
 
 
-/*
 
 function submitToAdmin() {
-  
+    alert('hello')
 }
-
-*/
