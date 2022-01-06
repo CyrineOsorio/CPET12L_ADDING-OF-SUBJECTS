@@ -139,7 +139,9 @@ function submitToAdmin() {
             z = students_grade[i][4];
             if (remarks == z) {
                 result += y + "\n"
+
             }
+
         }
         alert("The failed subject of the students that will be compare to the offered subject before to pass in admin request approval.")
         alert(result)
@@ -147,6 +149,11 @@ function submitToAdmin() {
         document.getElementById("validationTooltip02").disabled = true;
         document.getElementById("addremarks").disabled = true;
         document.getElementById("submitbtn").disabled = true;
+        window.location.href = '../pic/studentrecords.html';
+
     }
 
 }
+
+
+// sSTUDENT RECORDS

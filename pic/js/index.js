@@ -8,7 +8,7 @@ var accounts = [
     ["RAY", "VEGA", "TUPC-19-0004", 'BET-COET-S-3B', "email5@gmail.com", "password5", "Processing"]
 ]
 
-
+localStorage.setItem("accounts", accounts);
 
 function displayTable() {
 
