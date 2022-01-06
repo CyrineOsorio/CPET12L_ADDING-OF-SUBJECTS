@@ -22,24 +22,24 @@ function details_hide_show() {
 var students_grade = [
     //FIRST YEAR - FIRST AND SECOND SEMESTER
 
-    ['BET1-C', 'Orientation to BET, Seminars and Field Trips', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CHEMGENL-C', 'General Chemistry (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CPET 1L-C', 'Program Logic and Formulation (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['ET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER'],
-    ['ET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
-    ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER'],
-    ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER'],
+    ['BET1-C', 'Orientation to BET, Seminars and Field Trips', 'FIRST YEAR - FIRST SEMESTER', 1.5],
+    ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER', 5.0],
+    ['CHEMGENL-C', 'General Chemistry (Lab)', 'FIRST YEAR - FIRST SEMESTER', 1.5],
+    ['CPET 1L-C', 'Program Logic and Formulation (Lab)', 'FIRST YEAR - FIRST SEMESTER', 1.5],
+    ['ET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER', 1.5],
+    ['ET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER', 1.5],
+    ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER', 1.5],
+    ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER', 1.5],
 
     //SECOND YEAR - FIRST AND SECOND SEMESTER
-    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
-    ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER'],
-    ['PE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER'],
-    ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
-    ['CPET2L-C', 'Object Oriented Programming 2(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
-    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER'],
+    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER', 1.5],
+    ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER', 5.0],
+    ['PE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER', 1.5],
+    ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER', 1.5],
+    ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER', 1.5],
+    ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER', 1.5],
+    ['CPET2L-C', 'Object Oriented Programming 2(Lab)', 'SECOND YEAR - SECOND SEMESTER', 1.5],
+    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER', 5.0],
 
     //THIRD YEAR - FIRST AND SECOND SEMESTER
     ['EST1L-C', 'Electronics 1 Lab', 'THIRD YEAR - FIRST SEMESTER'],
