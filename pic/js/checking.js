@@ -149,11 +149,10 @@ function submitToAdmin() {
         document.getElementById("validationTooltip02").disabled = true;
         document.getElementById("addremarks").disabled = true;
         document.getElementById("submitbtn").disabled = true;
-        window.location.href = '../pic/studentrecords.html';
 
     }
 
 }
 
 
-// sSTUDENT RECORDS
+// STUDENT RECORDS
