@@ -130,5 +130,15 @@ function addremarks() {
 
 
 function submitToAdmin() {
-    alert('hello')
+    var remarks = "Failed"
+    let result = ''
+    for (var i = 0, len = students_grade.length; i < len; i++) {
+        y = students_grade[i][0];
+        z = students_grade[i][4];
+        if (remarks == z) {
+            result += y + "\n"
+        }
+    }
+    alert("The failed subject of the students that will be compare to the offered subject before to pass in admin request approval.")
+    alert(result)
 }
