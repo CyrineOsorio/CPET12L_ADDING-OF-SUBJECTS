@@ -41,9 +41,6 @@
                         <a class="nav-link" href="index.html" id="allsubjects">All Subjects <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="offered.html" id="offered">Offered</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="requestapproval.html" id="request">Request Approval</a>
                     </li>
                     <li class="nav-item">
@@ -62,7 +59,9 @@
 
         </div>
         <form class="needs-validation" name='listofsubs' novalidate>
-            <!--novalidate-->
+
+            <legend>Add or Remove Subject</legend>
+
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="validationTooltip01">Subject Code</label>
@@ -92,27 +91,78 @@
             <div class="button1">
                 <input class="btn btn-primary" type="button" value="x remove subject" onClick="submitFunction(1)">
                 <input class="btn btn-primary" type="button" value="+ add subject" onClick="submitFunction(2)">
-                <!--<button class="btn btn-primary" type="submit">x remove subject</button>-->
-                <!-- <button class="btn btn-primary" type="submit">+ add subject</button>-->
             </div>
         </form>
 
+
+        <form class="needs-validation" name="updateOfferStatusform" action="javascript:updateOfferStatus();" novalidate>
+
+            <legend>Change Offer Status</legend>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip03">Subject Code</label>
+                    <input type="text" class="form-control" id="validationTooltip03" required>
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip04">Offer Status</label>
+                    <select class="custom-select" id="validationTooltip04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option value="Not Offer">Not Offer</option>
+                  <option value="Offer">Offer</option>
+                </select>
+                </div>
+
+                <div class="offerbttn">
+                    <button class="btn btn-primary" type="submit">Change Status</button>
+                    <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="showOffered()">View Offered</a>
+                </div>
+        </form>
+
+
         <div class="main">
-            <table id="allsubtable"></table>
-            <!-- <ol type="1">
-                <li>BET1-C Orientation to BET, Seminars and Field Trips</li>
-                <li>CHEMGEN-C General Chemistry (Lec)CHEMGENL-C General Chemistry (Lab)</li>
-                <li>CPET 1L-C Program Logic and Formulation (Lab)</li>
-                <li>BET1-C Electrical Circuits (Lec)</li>
-                <li>BET1L-C Electrical Circuits (Lab)</li>
-                <li>GEC1-C Understanding the Self</li>
-                <li>GEC4-C Mathematics in the Modern World 1</li>
-                <li>MATHA05-C Pre-Calculus</li>
-                <li>NSTP1-C National Service Training Program 1</li>
-                <li>CPE1-C Physical Fitness</li>
-            </ol>-->
+            <table>
+                <legend>ALL YEAR - ALL SEMESTER</legend>
+                <thead>
+                    <th>SUBJECT CODE</th>
+                    <th>SUBJECT NAME</th>
+                    <th>YEAR AND SEMESTER</th>
+                    <th>OFFERED STATUS</th>
+                </thead>
+                <tbody id="allsubtable">
+
+                </tbody>
+
+            </table>
 
         </div>
+
+
+        <!-- Modal -->
+        <form class="reqsub">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">OFFERED SUBJECTS</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+                        </div>
+                        <div class="modal-body">
+                            <ol type="1" id="modalBody"></ol>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+
     </section>
 
 

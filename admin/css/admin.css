@@ -143,6 +143,9 @@ section {
 }
 
 .offerbttn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
     align-self: center;
     margin-top: 15px;
     width: 400px;

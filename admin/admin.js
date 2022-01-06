@@ -5,44 +5,44 @@
 var coetsubjects = [
 
     //FIRST YEAR - FIRST AND SECOND SEMESTER
-    ['BET1-C', 'Orientation to BET, Seminars and Field Trips', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CHEMGENL-C', 'General Chemistry (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['CPET 1L-C', 'Program Logic and Formulation (Lab)', 'FIRST YEAR - FIRST SEMESTER'],
-    ['ET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER'],
-    ['ET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER'],
-    ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER'],
-    ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER'],
+    ['BET1-C', 'Orientation to BET, Seminars and Field Trips', 'FIRST YEAR - FIRST SEMESTER', 'Offer'],
+    ['CHEMGEN-C', 'General Chemistry (Lec)', 'FIRST YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['CHEMGENL-C', 'General Chemistry (Lab)', 'FIRST YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['CPET 1L-C', 'Program Logic and Formulation (Lab)', 'FIRST YEAR - FIRST SEMESTER', 'Offer'],
+    ['ET1-C', 'Electrical Circuits (Lec)', 'FIRST YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['ET1L-C', 'Electrical Circuits (Lab)', 'FIRST YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['GEC1-C', 'Understanding the Self', 'FIRST YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['GEC4-C', 'Mathematics in the Modern World 1', 'FIRST YEAR - SECOND SEMESTER', 'Not Offer'],
 
     //SECOND YEAR - FIRST AND SECOND SEMESTER
-    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER'],
-    ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER'],
-    ['PE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER'],
-    ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER'],
-    ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
-    ['CPET2L-C', 'Object Oriented Programming 2(Lab)', 'SECOND YEAR - SECOND SEMESTER'],
-    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER'],
+    ['MATHA05-C', 'Pre-Calculus', 'SECOND YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['NSTP1-C', 'National Service Training Program 1', 'SECOND YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['PE1-C', 'Physical Fitness', 'SECOND YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['CAD-C', 'Computer Aided Drafting', 'SECOND YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['CHET-C', 'Chemistry for Engineering Technologists', 'SECOND YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['CHETL-C', 'Chemistry for Engineering Technologists(Lab)', 'SECOND YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['CPET2L-C', 'Object Oriented Programming 2(Lab)', 'SECOND YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['EST1-C', 'Electronics 1(Lec)', 'SECOND YEAR - SECOND SEMESTER', 'Not Offer'],
 
     //THIRD YEAR - FIRST AND SECOND SEMESTER
-    ['EST1L-C', 'Electronics 1 Lab', 'THIRD YEAR - FIRST SEMESTER'],
-    ['GEC2-C', 'Readings in Philippine History', 'THIRD YEAR - SECOND SEMESTER'],
-    ['GEC5-C', 'Purposive Communication', 'THIRD YEAR - FIRST SEMESTER'],
-    ['GEC7-C', 'Science, Technology, and Society', 'THIRD YEAR - SECOND SEMESTER'],
-    ['MATHA13-C', 'Differential Calculus', 'THIRD YEAR - FIRST SEMESTER'],
-    ['NSTP2-C', 'National Service Training Program 2', 'THIRD YEAR - SECOND SEMESTER'],
-    ['PE2-C', 'Rhythmic Activities', 'THIRD YEAR - FIRST SEMESTER'],
-    ['CPET3-C', 'Logic Circuits and Switching Theory Lec.', 'THIRD YEAR - SECOND SEMESTER'],
+    ['EST1L-C', 'Electronics 1 Lab', 'THIRD YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['GEC2-C', 'Readings in Philippine History', 'THIRD YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['GEC5-C', 'Purposive Communication', 'THIRD YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['GEC7-C', 'Science, Technology, and Society', 'THIRD YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['MATHA13-C', 'Differential Calculus', 'THIRD YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['NSTP2-C', 'National Service Training Program 2', 'THIRD YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['PE2-C', 'Rhythmic Activities', 'THIRD YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['CPET3-C', 'Logic Circuits and Switching Theory Lec.', 'THIRD YEAR - SECOND SEMESTER', 'Not Offer'],
 
     //FOURTH YEAR - FIRST AND SECOND SEMESTER
-    ['CPET3L-C', 'Logic Circuits and Switching Theory Lab.', 'FOURTH YEAR - FIRST SEMESTER'],
-    ['CPET4-C', 'Data and Digital Communcations', 'FOURTH YEAR - SECOND SEMESTER'],
-    ['CPET5L-C', 'Data Structures and Algorithms Lab.', 'FOURTH YEAR - FIRST SEMESTER'],
-    ['CPET6L-C', 'Introduction to Hardware Description Language', 'FOURTH YEAR - SECOND SEMESTER'],
-    ['GEC8-C', 'Ethics', 'FOURTH YEAR - FIRST SEMESTER'],
-    ['GEM14-C', 'Life and Works of Rizal', 'FOURTH YEAR - SECOND SEMESTER'],
-    ['MATHA23-C', 'Integral Calculus', 'FOURTH YEAR - FIRST SEMESTER'],
-    ['PE3-C', 'Individual and Dual Sports', 'FOURTH YEAR - SECOND SEMESTER']
+    ['CPET3L-C', 'Logic Circuits and Switching Theory Lab.', 'FOURTH YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['CPET4-C', 'Data and Digital Communcations', 'FOURTH YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['CPET5L-C', 'Data Structures and Algorithms Lab.', 'FOURTH YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['CPET6L-C', 'Introduction to Hardware Description Language', 'FOURTH YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['GEC8-C', 'Ethics', 'FOURTH YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['GEM14-C', 'Life and Works of Rizal', 'FOURTH YEAR - SECOND SEMESTER', 'Not Offer'],
+    ['MATHA23-C', 'Integral Calculus', 'FOURTH YEAR - FIRST SEMESTER', 'Not Offer'],
+    ['PE3-C', 'Individual and Dual Sports', 'FOURTH YEAR - SECOND SEMESTER', 'Not Offer']
 
 ]
 
@@ -54,23 +54,34 @@ console.log(coetsubjects)
 
 // funtions for displaying of list in table
 //reference: https://stackoverflow.com/questions/15164655/generate-html-table-from-2d-javascript-array
-function createTable(tableData) {
-    var table = document.getElementById('allsubtable');
-    var row = {};
-    var cell = {};
 
-    tableData.forEach(function(rowData) {
-        row = table.insertRow(-1); // [-1] for last position in Safari
-        rowData.forEach(function(cellData) {
-            cell = row.insertCell();
-            cell.textContent = cellData;
-        });
-    });
-    //document.body.appendChild(table);
+
+function displayTable() {
+
+    var table = document.getElementById('allsubtable');
+    var len = coetsubjects.length;
+    for (let i = 0; i < len; i++) {
+
+        //add row
+        var row = table.insertRow();
+        //add cells
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+
+        cell1.innerHTML = coetsubjects[i][0];
+        cell2.innerHTML = coetsubjects[i][1];
+        cell3.innerHTML = coetsubjects[i][2];
+        cell4.innerHTML = coetsubjects[i][3];
+
+        //add onclick
+        document.getElementsByTagName("tr")[i + 1].setAttribute("onclick", "rowGetter(this)");
+
+    }
 }
 
-createTable(coetsubjects);
-
+displayTable();
 
 
 
@@ -131,119 +142,58 @@ function submitFunction(j) {
             // output the result
             // window.alert(outputText);
         }
-        magingCheckbox();
     }
 }
 
+function updateOfferStatus() {
+    var subcode = document.forms["updateOfferStatusform"]['validationTooltip03'].value;
+    var offerstatus = document.forms["updateOfferStatusform"]['validationTooltip04'].value;
 
-function myFunction() {
-    let text = " "
+    var outputText = ""
+
+    //find the subject code and update the remark element
     for (var i = 0, len = coetsubjects.length; i < len; i++) {
-        a = coetsubjects[i][0]
-        b = coetsubjects[i][1]
-        text += a + " " + b
-    }
-    window.alert(text)
+        w = coetsubjects[i][0]
+        x = coetsubjects[i][1]
+        y = coetsubjects[i][2]
+        if (w == subcode) {
+            //update the matrix
+            coetsubjects[i] = [w, x, y, offerstatus]
 
-}
-
-myFunction();
-
-//----------------OFFERED SUBJECTS--------------
-
-// function para sa table sa loob ni offered subjects
-// get lahat ng laman loob ni edit na pop up at magdisplay sa offered na div
-
-
-function getAllSubjects() {
-    //kuhain yung sa checklist na mga nacheck
-    var mgaCheckedSubject = document.getElementsByName('sub');
-    //listahan yan, dito mapupunta yung mga nacheck
-    var listahan1 = [];
-
-    //for every items na nandun sa subject checklist
-    for (var checkbox of mgaCheckedSubject) {
-
-        //kapag nacheck yung isang checkbox
-        if (checkbox.checked) {
-            //ipupush or idadagdag sa listahan1
-            listahan1.push(checkbox.value);
-            //lahat ng nasa listahan1 ay gagawin list sa html yung <li> 
-            listahanOffered.innerHTML = listahan1.map(i => `<li>${i}</li>`).join('');
+            outputText = "Successfully Update the Status"
         }
-
     }
+    if (outputText == "") {
+        outputText = "Subject Code Not Existing"
+    }
+    //refresh table
+    document.getElementById("allsubtable").innerHTML = "";
+    displayTable()
+    window.alert(outputText)
 }
 
-//slice natin yung coetsubjects na list para iset natin sila as value nung mga checkboxes.
-// dapat nag iterate yung id at yung for sa label para pag hinover sila yung macclick
 
-function magingCheckbox() {
-    let ipiprint = " "
+
+
+//Show Offered Subject
+
+function showOffered() {
+    var remarks = "Offer"
+    let result = []
     for (var i = 0, len = coetsubjects.length; i < len; i++) {
-        a = coetsubjects[i][0]
-        b = coetsubjects[i][1]
-        ipiprint += a + "-" + b + "\n"
-        console.log(ipiprint)
-
-        // creating checkboxes
-
-
-
-    }
-}
-
-// function displayOnEdit() {
-
-//     var x = document.createElement("INPUT")
-//     var y = document.createElement("LABEL")
-//     x.setAttribute("type", "checkbox")
-//     x.setAttribute("name", "hatdog")
-//     x.setAttribute("id", "s1")
-//     y.setAttribute("for", "s1")
-
-
-//     document.getElementById('modalBody').appendChild(x);
-//     document.getElementById('modalBody').appendChild(y);
-// }
-
-
-// tryyyyyyyyyyyyyyyyyyyy
-
-
-function displayOnEdit() {
-
-    let ipiprint = " "
-    let pangID = ""
-    var listahan2 = [];
-    var listahan3 = [];
-    for (var i = 0, len = coetsubjects.length; i < len; i++) {
-        a = coetsubjects[i][0]
-        b = coetsubjects[i][1]
-        ipiprint = a + "-" + b
-        pangID = "s" + i
-        listahan2.push(ipiprint)
-        listahan3.push(pangID)
-
-
-    }
-
-
-
-    for (var j of listahan2) {
-        for (var h of listahan3) {
-            $('#modalBody')
-                .append(`<input type="checkbox" id="${h}" name="sub" value="${j}">`)
-                .append(`<label for="${h}">${j}</label></div>`)
+        x = coetsubjects[i][0];
+        y = coetsubjects[i][1];
+        z = coetsubjects[i][3];
+        if (remarks == z) {
+            result_1 = x + " " + y + "\n"
+            result.push(result_1)
+            console.log(result_1)
+            console.log(result)
         }
     }
 
 
-
-
-
-
-
-
-
+    modalBody.innerHTML = result.map(i => `<li>${i}</li>`).join('');
 }
+
+showOffered()
