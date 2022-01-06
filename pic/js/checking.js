@@ -130,15 +130,23 @@ function addremarks() {
 
 
 function submitToAdmin() {
-    var remarks = "Failed"
-    let result = ''
-    for (var i = 0, len = students_grade.length; i < len; i++) {
-        y = students_grade[i][0];
-        z = students_grade[i][4];
-        if (remarks == z) {
-            result += y + "\n"
+
+    if (confirm("Are you sure you want to Submitted it? Once you Submit it you can not change it for good.") == true) {
+        var remarks = "Failed"
+        let result = ''
+        for (var i = 0, len = students_grade.length; i < len; i++) {
+            y = students_grade[i][0];
+            z = students_grade[i][4];
+            if (remarks == z) {
+                result += y + "\n"
+            }
         }
+        alert("The failed subject of the students that will be compare to the offered subject before to pass in admin request approval.")
+        alert(result)
+        document.getElementById("validationTooltip01").disabled = true;
+        document.getElementById("validationTooltip02").disabled = true;
+        document.getElementById("addremarks").disabled = true;
+        document.getElementById("submitbtn").disabled = true;
     }
-    alert("The failed subject of the students that will be compare to the offered subject before to pass in admin request approval.")
-    alert(result)
+
 }
