@@ -20,3 +20,7 @@ function myFunction() {
     }
 }
 myFunction()
+
+$(".approveone").click(function() {
+    $(".studenttag").css("display", "none");
+});
