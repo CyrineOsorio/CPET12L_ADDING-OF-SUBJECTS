@@ -16,7 +16,7 @@ function myFunction() {
         ids = "s" + i;
         $('#modalBody')
             .append(`<input type="checkbox" id="${ids}" name="sub" value="${subjects}">`)
-            .append(`<label for="${ids}">${subjects}</label></div>`)
+            .append(`<label for="${ids}" style="width: 100%">${subjects}</label></div>`)
     }
 }
 myFunction()
