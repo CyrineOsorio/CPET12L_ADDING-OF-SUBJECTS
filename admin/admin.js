@@ -104,7 +104,7 @@ function submitFunction(j) {
                 coetsubjects.splice(i, 1);
                 // funtions for displaying and refreshing of list in table
                 document.getElementById("allsubtable").innerHTML = "";
-                createTable(coetsubjects);
+                displayTable();
                 outputText = "Successfully deleted the subject";
                 break; // need this break to prevent multiple results of the same array
             }
@@ -136,11 +136,12 @@ function submitFunction(j) {
                 coetsubjects.push([subcode, subname, yearandsem])
                     // funtions for displaying and refreshing of list in table
                 document.getElementById("allsubtable").innerHTML = "";
-                createTable(coetsubjects);
                 outputText = "Successfully Added";
+                displayTable();
+
             }
             // output the result
-            // window.alert(outputText);
+            window.alert(outputText);
         }
     }
 }
