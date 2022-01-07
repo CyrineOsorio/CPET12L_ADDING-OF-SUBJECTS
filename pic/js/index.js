@@ -39,3 +39,29 @@ function displayTable() {
 
 displayTable()
 
+
+function getDataFromCurrentCell(e) {
+
+    var currow = (e.target.parentNode.innerText); //Current row.
+    // whole cell;
+    // var postTitle = event.target.parentNode.parentNode.childNodes[1].textContent;
+    var firstcell = e.target.parentNode.childNodes[0].textContent;
+    var secondcell = e.target.parentNode.childNodes[1].textContent;
+    var thirdcell = e.target.parentNode.childNodes[2].textContent;
+    var fourthcell = e.target.parentNode.childNodes[3].textContent;
+
+    alert(firstcell)
+    alert(secondcell)
+    alert(thirdcell)
+    alert(fourthcell)
+
+    // set student details from student cell to transfet on checking page
+    localStorage.setItem("firstcell", firstcell);
+    localStorage.setItem("secondcell", secondcell);
+    localStorage.setItem("thirdcell", thirdcell);
+    localStorage.setItem("fourthcell", fourthcell);
+
+
+    document.location = 'checking.html'
+
+}

@@ -17,6 +17,9 @@ function details_hide_show() {
 
 // Reference: https://stackoverflow.com/questions/32383547/javascript-search-for-element-in-multidimensional-array
 
+// get student email from student cell in index page
+var a = localStorage.getItem("firstcell");
+document.getElementById("studentname").innerHTML = "Student:" + " " + a;
 
 // student grades
 var students_grade = [
